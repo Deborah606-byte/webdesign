@@ -27,3 +27,44 @@ header{
 .new{
     color: red;
 }
+
+.testimonials_pic{
+    width: 2.5em;
+}
+.testimonials{
+    height: 80vh;
+}
+
+.star{
+    color: #ffd700;
+}
+/* .vl{
+    border-left: 2px solid black;
+    height: 10px;
+} */
+.end{
+    background-color: #E4F7FF;
+    /* height: 70vh; */
+}
+h2{
+    color: #FA1515;
+}
+hr{
+    margin: 3em;
+    background: black;
+    height: 0.1em;
+}
+.fa-brands{
+    display: inline-block;
+    height: 2.5em;
+    width: 2.5em;
+    margin:0 1.25em 1.25em 0;
+    text-align:center;
+    line-height: 2.5em;
+    border-radius: 50%;
+    color: black;
+    transition: all 0.2s ease;
+    padding: 0.7em 0 0 0;
+    background-color: white;
+}
+

@@ -11,3 +11,7 @@
 .badge{
     @apply text-secondary-200 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2;
 }
+
+.testify{
+    @apply bg-gray-300 w-auto h-20;
+}
