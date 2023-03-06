@@ -23,6 +23,7 @@ header{
 
 .fa-star{
     font-size: 1.1em;
+    cursor: pointer;
 }
 .new{
     color: red;
