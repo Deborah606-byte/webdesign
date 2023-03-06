@@ -1,0 +1,1 @@
+This is a website for comparing two countries as well as rating them.
