@@ -32,10 +32,9 @@ header{
 .testimonials_pic{
     width: 2.5em;
 }
-.testimonials{
-    height: 80vh;
+.testify{
+    box-sizing: border-box;
 }
-
 .star{
     color: #ffd700;
 }
@@ -43,8 +42,12 @@ header{
     border-left: 2px solid black;
     height: 10px;
 } */
+.fact{
+    color: #00344A
+}
 .end{
     background-color: #E4F7FF;
+    color: #00344A;
     /* height: 70vh; */
 }
 h2{
@@ -63,9 +66,11 @@ hr{
     text-align:center;
     line-height: 2.5em;
     border-radius: 50%;
-    color: black;
+    color: #00344A;
     transition: all 0.2s ease;
     padding: 0.7em 0 0 0;
     background-color: white;
 }
-
+.testimonials h4{
+    color: red;
+}
