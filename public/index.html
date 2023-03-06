@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAPs Search</title>
+
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="bg-cover">
+        <div class="bg-black/60 flex justify-between">
+            <a class="text-primary ml-2 text-4xl font-extrabold ">DAPS Search</a>
+            <img src="../IMAGES/compass.jpg" alt="compass" class="w-20 pt-1 mr-10 opacity-40">
+        </div>
+        <div class="py-52 mx-auto flex flex-col items-center gap-y-5 bg-black/60">
+            <div class="serach-box flex justify-center items-center">
+                <button type="button" class="inline-block bg-white rounded-3xl px-3 w-[300px] border-2 border-red-500">
+                    <svg class="h-4 inline w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>                  
+                    <input type="text" placeholder="Search for countries" class="bg-white placeholder:text-slate-400 text-sm outline-none px-7 py-3">
+                    <svg class="h-3 inline w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
+                      </svg>
+                      
+                </button>
+            </div>
+
+            <div class="py-2 uppercase px-20 text-sm text-gray-300">
+                <span>More Than Just A Country Search!!</span>
+            </div>
+
+            <nav class="flex items-center justify-between px-20 py-6 max-w-screen-xl text-gray-300 uppercase font-bold bg-black/20 rounded-full">
+                <ul class="flex items-center justify-between space-x-8">
+                    <li>
+                        <a href="#" class="hover:text-primary">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-primary">
+                            <span>Compare</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-primary">
+                            <span>Countries</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-primary">
+                            <span>About</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+      <!-- compare countries go here-->
+      <section>
+        <div class="bg-gray-300 compare">
+
+        </div>
+      </section>
+
+      <!-- country cards go here -->
+      <div class="p-4 country">
+        <h4></h4>
+        <div class="grid lg:grid-cols-5 gap-10">
+            <!-- cards go here -->
+            <div class="card hover:shadow-lg">
+                <img src="../IMAGES/cultureghana.webp" alt="ghana" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4 text-center">
+                    <span class="font-bold text-gray-300">Republic of Ghana</span>
+                    <span class="block text-gray-500 text-sm">Second Most Peaceful in Sub-Saharan Africa</span>
+                </div>
+                <div class="container py-3 bg-gray-300">
+                    <p class="font-bold text-sm">Rate:</p>
+                    <div id="ghana" class="rate_country">
+                    <i class="fa-solid fa-star" id="s1"></i>
+                    <i class="fa-solid fa-star" id="s2"></i>
+                    <i class="fa-solid fa-star" id="s3"></i>
+                    <i class="fa-solid fa-star" id="s4"></i>
+                    <i class="fa-solid fa-star" id="s5"></i>
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="../IMAGES/ghana.png" alt="Ghana" class="w-10 inline-block">
+                </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+                <img src="../IMAGES/nigeriapic.jfif" alt="nigeria" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4 text-center ">
+                    <span class="font-bold text-gray-300">Republic of Nigeria</span>
+                    <span class="block text-gray-500 text-sm">Largest Economy in <br> Africa</span>
+                </div>
+                <div class="container py-3 bg-gray-300">
+                    <p class="font-bold text-sm">Rate:</p>
+                    <div id="nigeria" class="rate_country">
+                    <i class="fa-solid fa-star" id="s1"></i>
+                    <i class="fa-solid fa-star" id="s2"></i>
+                    <i class="fa-solid fa-star" id="s3"></i>
+                    <i class="fa-solid fa-star" id="s4"></i>
+                    <i class="fa-solid fa-star" id="s5"></i>
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="../IMAGES/nigerianflag.jfif" alt="nigeria" class="w-10 inline-block">
+                </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+                <img src="../IMAGES/chinapic.jpg" alt="china" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4 text-center">
+                    <span class="font-bold text-gray-300">China</span>
+                    <span class="block text-gray-500 text-sm">World's largest <br> population.</span>
+                </div>
+                <div class="container py-3 bg-gray-300">
+                    <p class="font-bold text-sm">Rate:</p>
+                    <div id="china" class="rate_country">
+                        <i class="fa-solid fa-star" id="s1"></i>
+                        <i class="fa-solid fa-star" id="s2"></i>
+                        <i class="fa-solid fa-star" id="s3"></i>
+                        <i class="fa-solid fa-star" id="s4"></i>
+                        <i class="fa-solid fa-star" id="s5"></i>
+                    </div>
+                </div>
+                <div class="badge">
+                    <img src="../IMAGES/chinaflag.png" alt="china" class="w-10 inline-block">
+                </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+                <img src="../IMAGES/francepic.jfif" alt="france" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4 text-center">
+                    <span class="font-bold text-gray-300">French Republic</span>
+                    <span class="block text-gray-500 text-sm">Most visited country in the world</span>
+                </div>
+                <div class="container py-3 bg-gray-300">
+                    <p class="font-bold text-sm">Rate:</p>
+                    <i class="fa-solid fa-star" id="s1"></i>
+                    <i class="fa-solid fa-star" id="s2"></i>
+                    <i class="fa-solid fa-star" id="s3"></i>
+                    <i class="fa-solid fa-star" id="s4"></i>
+                    <i class="fa-solid fa-star" id="s5"></i>
+                </div>
+                <div class="badge">
+                    <img src="../IMAGES/franceflag.png" alt="flag" class="w-10 inline-block">
+                </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+                <img src="../IMAGES/koreapic1.jfif" alt="korea" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4 text-center">
+                    <span class="font-bold text-gray-300">Republic of Korea</span>
+                    <span class="block text-gray-500 text-sm">More than 95% can read and
+                        <br> write</span>
+                </div>
+                <div class="container py-3 bg-gray-300">
+                    <p class="font-bold text-sm">Rate:</p>
+                    <i class="fa-solid fa-star" id="s1"></i>
+                    <i class="fa-solid fa-star" id="s2"></i>
+                    <i class="fa-solid fa-star" id="s3"></i>
+                    <i class="fa-solid fa-star" id="s4"></i>
+                    <i class="fa-solid fa-star" id="s5"></i>
+                </div>
+                <div class="badge">
+                    <img src="../IMAGES/koreaflag.png" alt="Korea" class="w-10 inline-block">
+                </div>
+            </div>
+        </div>
+    
+    <div>
+        <div class="grid lg:grid-cols-4 gap-14 country lg:pl-24 lg:pr-24 pt-8">
+            <!-- cards go here -->
+            <div class="card hover:shadow-lg">
+                <img src="../IMAGES/belgiumpic.jpg" alt="belgium" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4 text-center">
+                    <span class="font-bold text-gray-300">Kingdom of Belgium</span>
+                    <span class="block text-gray-500 text-sm">Belgium can function without a government</span>
+                </div>
+                <div class="container py-3 bg-gray-300">
+                    <p class="font-bold text-sm">Rate:</p>
+                    <i class="fa-solid fa-star" id="s1"></i>
+                    <i class="fa-solid fa-star" id="s2"></i>
+                    <i class="fa-solid fa-star" id="s3"></i>
+                    <i class="fa-solid fa-star" id="s4"></i>
+                    <i class="fa-solid fa-star" id="s5"></i>
+                </div>
+                <div class="badge">
+                    <img src="../IMAGES/belgiumflag.png" alt="Belgium" class="w-10 inline-block">
+                </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+                <img src="../IMAGES/capeverdepic.webp" alt="capeverde" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4 text-center">
+                    <span class="font-bold text-gray-300">Cape Verde</span>
+                    <span class="block text-gray-500 text-sm">Third largest nesting site for loggerhead turtles</span>
+                </div>
+                <div class="container py-3 bg-gray-300">
+                    <p class="font-bold text-sm">Rate:</p>
+                    <i class="fa-solid fa-star" id="e1"></i>
+                    <i class="fa-solid fa-star" id="e2"></i>
+                    <i class="fa-solid fa-star" id="e3"></i>
+                    <i class="fa-solid fa-star" id="e4"></i>
+                    <i class="fa-solid fa-star" id="e5"></i>
+                </div>
+                <div class="badge">
+                    <img src="../IMAGES/capeverde flag.png" alt="Cape Verde" class="w-10 inline-block">
+                </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+                <img src="../IMAGES/egypt.jpg" alt="egypt" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4 text-center">
+                    <span class="font-bold text-gray-300">Arab Republic of Egypt</span>
+                    <span class="block text-gray-500 text-sm">Only Remaining Ancient Wonder in the World</span>
+                </div>
+                <div class="container py-3 bg-gray-300">
+                    <p class="font-bold text-sm">Rate:</p>
+                    <i class="fa-solid fa-star " id="e1"></i>
+                    <i class="fa-solid fa-star" id="e2"></i>
+                    <i class="fa-solid fa-star " id="e3"></i>
+                    <i class="fa-solid fa-star " id="e4"></i>
+                    <i class="fa-solid fa-star " id="e5"></i>
+                </div>
+                <div class="badge">
+                    <img src="../IMAGES/egyptflag.png" alt="Egypt" class="w-10 inline-block">
+                </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+                <img src="../IMAGES/englandpic.jpg" alt="England" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4 text-center">
+                    <span class="font-bold  text-gray-300">The United Kingdom</span>
+                    <span class="block text-gray-500 text-sm"> Most famous drink among the British is Tea</span>
+                </div>
+                <div class="container py-3 bg-gray-300">
+                    <p class="font-bold text-sm">Rate:</p>
+                    <i class="fa-solid fa-star star" id="e1"></i>
+                    <i class="fa-solid fa-star star" id="e2"></i>
+                    <i class="fa-solid fa-star star" id="e3"></i>
+                    <i class="fa-solid fa-star star" id="e4"></i>
+                    <i class="fa-solid fa-star star" id="e5"></i>
+                </div>
+                <div class="badge">
+                    <img src="../IMAGES/ukflag.png" alt="uk" class="w-10 inline-block">
+                </div>
+            </div>
+
+        </div>
+      </div>
+
+
+      <div>
+        <div class="grid lg:grid-cols-3 gap-14 country lg:pl-52 lg:pr-52 pt-8">
+            <!-- cards go here -->
+            <div class="card hover:shadow-lg">
+                <img src="../IMAGES/australia.jpg" alt="australia" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4 text-center">
+                    <span class="font-bold text-gray-300">The Commonwealth of Australia</span>
+                    <span class="block text-gray-500 text-sm">Has over 60 separate wine regions</span>
+                </div>
+                <div class="container py-3 bg-gray-300">
+                    <p class="font-bold text-sm">Rate:</p>
+                    <i class="fa-solid fa-star" id="s1"></i>
+                    <i class="fa-solid fa-star" id="s2"></i>
+                    <i class="fa-solid fa-star" id="s3"></i>
+                    <i class="fa-solid fa-star" id="s4"></i>
+                    <i class="fa-solid fa-star" id="s5"></i>
+                </div>
+                <div class="badge">
+                    <img src="../IMAGES/australiaflag.png" alt="Australia" class="w-10 inline-block">
+                </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+                <img src="../IMAGES/congopic.jpg" alt="congo" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4 text-center">
+                    <span class="font-bold text-gray-300">The Democratic Republic of Congo</span>
+                    <span class="block text-gray-500 text-sm">Congo played role in World War II</span>
+                </div>
+                <div class="container py-3 bg-gray-300">
+                    <p class="font-bold text-sm">Rate:</p>
+                    <i class="fa-solid fa-star" id="s1"></i>
+                    <i class="fa-solid fa-star" id="s2"></i>
+                    <i class="fa-solid fa-star" id="s3"></i>
+                    <i class="fa-solid fa-star" id="s4"></i>
+                    <i class="fa-solid fa-star" id="s5"></i>
+                </div>
+                <div class="badge">
+                    <img src="../IMAGES/congoflag.png" alt="Congo" class="w-10 inline-block">
+                </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+                <img src="../IMAGES/ethiopia.jpg" alt="egypt" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m-4 text-center">
+                    <span class="font-bold text-gray-300">The Federal Democratic Republic of Ethiopia</span>
+                    <span class="block text-gray-500 text-sm">Over half of Africa's mountains are in Ethiopia</span>
+                </div>
+                <div class="container py-3 bg-gray-300">
+                    <p class="font-bold text-sm">Rate:</p>
+                    <i class="fa-solid fa-star" id="s1"></i>
+                    <i class="fa-solid fa-star" id="s2"></i>
+                    <i class="fa-solid fa-star" id="s3"></i>
+                    <i class="fa-solid fa-star" id="s4"></i>
+                    <i class="fa-solid fa-star" id="s5"></i>
+                </div>
+                <div class="badge">
+                    <img src="../IMAGES/ethiopiaflag.png" alt="Ethiopia" class="w-10 inline-block">
+                </div>
+            </div>
+
+         </div>
+        </div>
+        </div>
+    </div>
+
+    <section>
+        <!-- testimonials go here -->
+        <div>
+
+        </div>
+    </section>
+
+    <!-- <script type="module" src="../modules/index.js"></script> -->
+    <script type="text/javascript" src="../modules/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url('../IMAGES/worldmap.jpg');
+    height: 100vh;
+}
+.start{
+    align-items: center;
+}
+.compare{
+    height: 100vh;
+}
+.country{
+    background-color: #00085E;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa-star{
+    font-size: 1.1em;
+}
+.new{
+    color: red;
+}
