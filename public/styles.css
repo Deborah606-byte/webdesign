@@ -9,6 +9,9 @@ header{
 .start{
     align-items: center;
 }
+.intro{
+    color: #00344A;
+}
 .compare{
     height: 100vh;
 }
@@ -73,4 +76,8 @@ hr{
 }
 .testimonials h4{
     color: red;
+}
+.fa-earth-americas{
+    color: white;
+    margin-top: 0.3125em;
 }
