@@ -6,6 +6,9 @@ header{
     background-image: url('../IMAGES/worldmap.jpg');
     height: 100vh;
 }
+.name{
+    color: #FA1515;
+}
 .start{
     align-items: center;
 }
@@ -36,7 +39,9 @@ header{
     width: 2.5em;
 }
 .testify{
-    box-sizing: border-box;
+    background-color: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+
 }
 .star{
     color: #ffd700;
@@ -80,4 +85,11 @@ hr{
 .fa-earth-americas{
     color: white;
     margin-top: 0.3125em;
+}
+.circle{
+    height: 20em;
+    width: 20em;
+    border-radius: 50%;
+    background-color: #00344A;
+    position:absol;
 }

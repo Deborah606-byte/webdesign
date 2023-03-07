@@ -13,5 +13,5 @@
 }
 
 .testify{
-    @apply bg-gray-300 w-auto h-20;
+    @apply w-auto h-20;
 }
