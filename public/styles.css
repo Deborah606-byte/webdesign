@@ -4,7 +4,6 @@
 }
 header{
     background-image: url('../IMAGES/worldmap.jpg');
-    height: 100vh;
 }
 .name{
     color: #FA1515;
@@ -62,7 +61,7 @@ h2{
     color: #FA1515;
 }
 hr{
-    margin: 3em;
+    margin: 2em;
     background: black;
     height: 0.1em;
 }
@@ -99,7 +98,7 @@ hr{
     background-position: center;
 }
 .inquiry{
-    background-color: white;
+    background-color: #00085E;
 }
 .text,
 .us,
@@ -107,6 +106,6 @@ hr{
     color:#FA1515;
 }
 .About_us{
-    background-color: #00085E;
+    background-color: #ffff;
 }
 

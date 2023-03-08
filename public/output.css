@@ -561,6 +561,14 @@ video {
   grid-column: span 4 / span 4;
 }
 
+.col-span-6{
+  grid-column: span 6 / span 6;
+}
+
+.col-span-8{
+  grid-column: span 8 / span 8;
+}
+
 .m-4{
   margin: 1rem;
 }
@@ -993,6 +1001,10 @@ video {
   padding: 1rem;
 }
 
+.p-3{
+  padding: 0.75rem;
+}
+
 .px-20{
   padding-left: 5rem;
   padding-right: 5rem;
@@ -1046,6 +1058,11 @@ video {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .pt-1{
@@ -1241,6 +1258,10 @@ video {
 @media (min-width: 1024px){
   .lg\:ml-80{
     margin-left: 20rem;
+  }
+
+  .lg\:grid-flow-col{
+    grid-auto-flow: column;
   }
 
   .lg\:grid-cols-12{
