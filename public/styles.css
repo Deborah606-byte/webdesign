@@ -13,7 +13,7 @@ header{
     align-items: center;
 }
 .intro{
-    color: #00344A;
+    font-style: italic;
 }
 .compare{
     height: 100vh;
@@ -91,5 +91,17 @@ hr{
     width: 20em;
     border-radius: 50%;
     background-color: #00344A;
-    position:absol;
 }
+
+/* About */
+.about_header{
+    background-image: url(../IMAGES/physical-world-map.jpg);
+    background-position: center;
+}
+.inquiry{
+    background-color: white;
+}
+.text{
+    color:#FA1515;
+}
+
