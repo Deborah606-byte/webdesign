@@ -101,7 +101,12 @@ hr{
 .inquiry{
     background-color: white;
 }
-.text{
+.text,
+.us,
+.developer{
     color:#FA1515;
+}
+.About_us{
+    background-color: #00085E;
 }
 
