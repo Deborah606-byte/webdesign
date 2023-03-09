@@ -15,7 +15,7 @@
 <body>
     <header class="bg-cover">
         <div class="bg-black/60 flex justify-between">
-            <a class="ml-2 text-4xl font-extrabold name">DAPS Search</a>
+            <a class="ml-2 text-4xl font-extrabold name text-heading">DAPS Search</a>
             <img src="../IMAGES/compass.jpg" alt="compass" class="w-20 pt-1 mr-10 opacity-40">
         </div>
         <div class="py-20 mx-auto flex flex-col items-center gap-y-5 bg-black/60">
@@ -72,7 +72,9 @@
 
       <!-- compare countries go here-->
       <section>
-        <div class="bg-white compare p-4 flex justify-evenly" id="compare-countries">
+       <div class="compare">
+        <h4 class="p-3 font-bold text-center text text-3xl text-heading">Compare The Costs of Living in Countries Capitals</h4>
+        <div class="bg-white p-4 flex justify-evenly" id="compare-countries">
             <div>
                 <form id="search_form" class="bg-white rounded-3xl px-3 w-[250px] border-2 border-slate-700 hover:border-slate-900 hover:border-[3px]">                 
                     <input id="search" type="text" placeholder="Country/City" class="bg-white placeholder:text-slate-400 text-sm outline-none px-1 py-1">
@@ -90,11 +92,12 @@
                 <input type="submit" value="Search" class="block border-2 bg-black w-36 text-white h-8 rounded-full hover:text-primary">
             </div>
         </div>
+       </div>
       </section>
 
       <!-- country cards go here -->
       <div class="p-4 country mt-20">
-        <h4 class="text-center text-3xl pt-5 pb-7 font-bold facts">Facts About Some Countries</h4>
+        <h4 class="text-center text-3xl pt-5 pb-7 font-bold text-heading">Facts About Some Countries</h4>
         <div class="grid lg:grid-cols-5 gap-10">
             <!-- cards go here -->
             <div class="card hover:shadow-lg">
@@ -370,7 +373,7 @@
 
     <section class="testimonials bg-white py-10">
         <!-- testimonials go here -->
-        <h4 class="text-3xl ml-24 font-bold">Testimonials</h4>
+        <h4 class="text-3xl ml-24 font-bold text-heading">Testimonials</h4>
         <div class="grid lg:grid-cols-2 ml-24 mr-24 gap-x-14">
             <div class="grid grid-flow-row pt-4 mr-6 gap-10">
                 <div class="flex justify-items-start testify">
@@ -423,7 +426,7 @@
         <h4 class="text-3xl font-extrabold lg:ml-80">Who Are We?</h4>
         <div class="grid lg:grid-cols-12 gap-10 mt-5">
             <div class="col-span-3">
-                <h2 class="text-6xl font-semibold ml-12">DAPS Search</h2>
+                <h2 class="text-6xl font-semibold ml-12 text-heading">DAPS Search</h2>
             </div>
             <div class="col-span-7">
                 <p class="py-6">DAPS Search is a website for searching information about a country. 
@@ -451,7 +454,7 @@
             </div>
         </div> 
 
-        <hr class="new">
+        <hr>
         <div class="grid lg:grid-cols-2 gap-x-10">
             <div>
                 <ul class="flex items-center justify-around">
