@@ -11,9 +11,6 @@ header{
 .intro{
     font-style: italic;
 }
-.compare{
-    height: 100vh;
-}
 .country{
     background-color: #00085E;
 }
@@ -81,6 +78,39 @@ hr{
     border-radius: 50%;
     background-color: #00344A;
 }
+.country_result{
+    /* height: 100vh; */
+    background-color: aqua;
+}
+.flag-img{
+    width: 20%;
+    min-width: 7.5em;
+}
+.country_result h2{
+    font-weight: 600;
+    color:#00344A;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.data-wrapper{
+    margin-bottom: 1em;
+    letter-spacing: 0.3px;
+}
+.country_result h4{
+    display: inline;
+    font-weight: 500;
+    color: #FA1515;
+}
+.country_result span{
+    color: #00344A;
+}
+.country_result h3{
+    color: #FA1515;
+}
+
+
+
+
 
 /* About */
 .about_header{
