@@ -22,12 +22,9 @@
             <div class="search-box flex justify-center items-center">
                 <form id="search_form" class="inline-block bg-white rounded-3xl px-5 w-[350px] border-2 border-slate-700 hover:border-slate-900 hover:border-[3px]">                 
                     <input id="search" type="text" placeholder="Search for countries" class="bg-white placeholder:text-slate-400 text-sm outline-none px-7 py-3">
-                    <svg class="h-5 inline w-6 ml-14" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                    </svg> 
-                </form>
+                    <button id="search-btn" class="border-2 border-gray-500 w-20 hover:text-heading text-black h-10 rounded-full">Search</button>
+                </form>    
             </div>
-
             <div class="py-2 px-20 font-thin text-sm text-white intro">
                 <span>More Than Just A Country Search!!</span>
             </div>
@@ -69,6 +66,10 @@
 
         </div>
     </header>
+
+    <div id="result">
+
+    </div>
 
       <!-- compare countries go here-->
       <section>
@@ -497,7 +498,7 @@
 
    </footer>
 
-    <!-- <script type="module" src="../modules/index.js"></script> -->
+    <script type="module" src="../modules/index.js"></script>
     <script type="text/javascript" src="../modules/script.js"></script>
 </body>
 </html>
