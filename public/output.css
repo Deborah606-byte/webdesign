@@ -577,6 +577,11 @@ video {
   margin: 1.25rem;
 }
 
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mx-32{
   margin-left: 8rem;
   margin-right: 8rem;
@@ -776,10 +781,6 @@ video {
   grid-auto-flow: row;
 }
 
-.grid-flow-col{
-  grid-auto-flow: column;
-}
-
 .flex-col{
   flex-direction: column;
 }
@@ -886,11 +887,6 @@ video {
   border-color: rgb(51 65 85 / var(--tw-border-opacity));
 }
 
-.border-black{
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -995,6 +991,11 @@ video {
   padding-bottom: 5rem;
 }
 
+.py-24{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1008,26 +1009,6 @@ video {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.px-44{
-  padding-left: 11rem;
-  padding-right: 11rem;
-}
-
-.px-72{
-  padding-left: 18rem;
-  padding-right: 18rem;
 }
 
 .pb-7{
@@ -1116,19 +1097,14 @@ video {
   text-transform: uppercase;
 }
 
-.text-black{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .text-element{
   --tw-text-opacity: 1;
-  color: rgb(0 52 74 / var(--tw-text-opacity));
+  color: rgb(10 38 71 / var(--tw-text-opacity));
 }
 
 .text-heading{
   --tw-text-opacity: 1;
-  color: rgb(250 21 21 / var(--tw-text-opacity));
+  color: rgb(20 66 114 / var(--tw-text-opacity));
 }
 
 .text-inherit{
@@ -1210,29 +1186,24 @@ video {
   border-color: rgb(15 23 42 / var(--tw-border-opacity));
 }
 
-.hover\:bg-black:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-white:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:text-black:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .hover\:text-heading:hover{
   --tw-text-opacity: 1;
-  color: rgb(250 21 21 / var(--tw-text-opacity));
+  color: rgb(20 66 114 / var(--tw-text-opacity));
 }
 
 .hover\:text-primary:hover{
   --tw-text-opacity: 1;
   color: rgb(255 99 99 / var(--tw-text-opacity));
-}
-
-.hover\:text-black:hover{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-lg:hover{

@@ -3,7 +3,7 @@
     padding: 0;
 }
 header{
-    background-image: url('../IMAGES/worldmap.jpg');
+    background-image: url('../IMAGES/WorldMap.svg');
 }
 .start{
     align-items: center;
@@ -12,7 +12,7 @@ header{
     font-style: italic;
 }
 .country{
-    background-color: #00085E;
+    background-color: #144272;
 }
 
 .container{
@@ -40,11 +40,20 @@ header{
     height: 10px;
 } */
 .fact{
-    color: #00344A
+    color: #0E2A47;
+}
+.card p{
+    color: #0E2A47;
+}
+.testimonials span{
+    color: #0E2A47;
+}
+.testimonials p{
+    color:#0E2A47;
 }
 .end{
-    background-color: #E4F7FF;
-    color: #00344A;
+    background-color: #2C74B3;
+    color: #0E2A47;
     /* height: 70vh; */
 }
 hr{
@@ -60,13 +69,10 @@ hr{
     text-align:center;
     line-height: 2.5em;
     border-radius: 50%;
-    color: #00344A;
+    color: #0E2A47;
     transition: all 0.2s ease;
     padding: 0.7em 0 0 0;
     background-color: white;
-}
-.testimonials h4{
-    color: red;
 }
 .fa-earth-americas{
     color: white;
@@ -80,7 +86,7 @@ hr{
 }
 .country_result{
     /* height: 100vh; */
-    background-color: aqua;
+    background-color: white;
 }
 .flag-img{
     width: 300px;
@@ -120,11 +126,10 @@ hr{
 
 /* About */
 .about_header{
-    background-image: url(../IMAGES/physical-world-map.jpg);
-    background-position: center;
+    background-image: url(../IMAGES/about.svg);
 }
 .inquiry{
-    background-color: #00085E;
+    background-color: #144272;
 }
 .About_us{
     background-color: #ffff;

@@ -13,23 +13,10 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="bg-cover">
-        <div class="bg-black/60 flex justify-between">
+    <header class="bg-cover p-2">
+        <div class="flex justify-between mx-2">
             <a class="ml-2 text-4xl font-extrabold name text-heading">DAPS Search</a>
-            <img src="../IMAGES/compass.jpg" alt="compass" class="w-20 pt-1 mr-10 opacity-40">
-        </div>
-        <div class="py-20 mx-auto flex flex-col items-center gap-y-5 bg-black/60">
-            <div class="search-box flex justify-center items-center">
-                <form id="search_form" class="inline-block bg-white rounded-3xl px-5 w-[350px] border-2 border-slate-700 hover:border-slate-900 hover:border-[3px] search-wrapper">                 
-                    <input id="country-inp" type="text" placeholder="Search for countries" class="bg-white placeholder:text-slate-400 text-sm outline-none px-7 py-3">
-                </form>  
-                <button id="search-btn" class="border-2 border-white w-20 hover:text-black hover:bg-white text-white h-10 rounded-r-3xl ml-2">Search</button>  
-            </div>
-            <div class="py-2 px-20 font-thin text-sm text-white intro">
-                <span>More Than Just A Country Search!!</span>
-            </div>
-
-            <nav class="flex items-center justify-between px-20 py-6 max-w-screen-xl text-white uppercase font-bold bg-black/20 rounded-full">
+            <nav class="text-white uppercase font-bold">
                 <ul class="flex items-center justify-between space-x-8">
                     <li>
                         <a href="#" class="hover:text-primary flex justify-end text-primary">
@@ -63,7 +50,18 @@
                     </li>
                 </ul>
             </nav>
+        </div>
 
+        <div class="py-24 mx-auto flex flex-col items-center gap-y-5">
+            <div class="search-box flex justify-center items-center">
+                <form id="search_form" class="inline-block bg-white rounded-3xl px-5 w-[350px] border-2 border-slate-700 hover:border-slate-900 hover:border-[3px] search-wrapper">                 
+                    <input id="country-inp" type="text" placeholder="Search for countries" class="bg-white placeholder:text-slate-400 text-sm outline-none px-7 py-3">
+                </form>  
+                <button id="search-btn" class="border-2 border-white w-20 hover:text-black hover:bg-white text-white h-10 rounded-r-3xl ml-2">Search</button>  
+            </div>
+            <div class="py-2 font-thin text-sm text-white intro text-center">
+                <span>More Than Just A Country Search!!</span>
+            </div>
         </div>
     </header>
 
@@ -104,7 +102,7 @@
             <div class="card hover:shadow-lg">
                 <img src="../IMAGES/cultureghana.webp" alt="ghana" class="w-full h-32 sm:h-48 object-cover">
                 <div class="m-4 text-center">
-                    <span class="font-bold">Republic of Ghana</span>
+                    <span class="font-bold text-element">Republic of Ghana</span>
                     <span class="block text-sm fact font-thin">Second Most Peaceful in Sub-Saharan Africa</span>
                 </div>
                 <div class="container py-3 bg-gray-300">
@@ -125,7 +123,7 @@
             <div class="card hover:shadow-lg">
                 <img src="../IMAGES/nigeriapic.jfif" alt="nigeria" class="w-full h-32 sm:h-48 object-cover">
                 <div class="m-4 text-center ">
-                    <span class="font-bold">Republic of Nigeria</span>
+                    <span class="font-bold text-element">Republic of Nigeria</span>
                     <span class="block text-sm fact font-thin">Largest Economy in <br> Africa</span>
                 </div>
                 <div class="container py-3 bg-gray-300">
@@ -146,7 +144,7 @@
             <div class="card hover:shadow-lg">
                 <img src="../IMAGES/chinapic.jpg" alt="china" class="w-full h-32 sm:h-48 object-cover">
                 <div class="m-4 text-center">
-                    <span class="font-bold">China</span>
+                    <span class="font-bold text-element">China</span>
                     <span class="block text-sm fact font-thin">World's largest <br> population.</span>
                 </div>
                 <div class="container py-3 bg-gray-300">
@@ -167,7 +165,7 @@
             <div class="card hover:shadow-lg">
                 <img src="../IMAGES/francepic.jfif" alt="france" class="w-full h-32 sm:h-48 object-cover">
                 <div class="m-4 text-center">
-                    <span class="font-bold">French Republic</span>
+                    <span class="font-bold text-element">French Republic</span>
                     <span class="block text-sm fact font-thin">Most visited country in the world</span>
                 </div>
                 <div class="container py-3 bg-gray-300">
@@ -188,7 +186,7 @@
             <div class="card hover:shadow-lg">
                 <img src="../IMAGES/koreapic1.jfif" alt="korea" class="w-full h-32 sm:h-48 object-cover">
                 <div class="m-4 text-center">
-                    <span class="font-bold">Republic of Korea</span>
+                    <span class="font-bold text-element">Republic of Korea</span>
                     <span class="block text-sm fact font-thin">More than 95% can read and
                         <br> write</span>
                 </div>
@@ -214,7 +212,7 @@
             <div class="card hover:shadow-lg">
                 <img src="../IMAGES/belgiumpic.jpg" alt="belgium" class="w-full h-32 sm:h-48 object-cover">
                 <div class="m-4 text-center">
-                    <span class="font-bold">Kingdom of Belgium</span>
+                    <span class="font-bold text-element">Kingdom of Belgium</span>
                     <span class="block text-sm fact font-thin">Belgium can function without a government</span>
                 </div>
                 <div class="container py-3 bg-gray-300">
@@ -235,7 +233,7 @@
             <div class="card hover:shadow-lg">
                 <img src="../IMAGES/capeverdepic.webp" alt="capeverde" class="w-full h-32 sm:h-48 object-cover">
                 <div class="m-4 text-center">
-                    <span class="font-bold">Cape Verde</span>
+                    <span class="font-bold text-element">Cape Verde</span>
                     <span class="block text-sm fact font-thin">Third largest nesting site for loggerhead turtles</span>
                 </div>
                 <div class="container py-3 bg-gray-300">
@@ -256,7 +254,7 @@
             <div class="card hover:shadow-lg">
                 <img src="../IMAGES/egypt.jpg" alt="egypt" class="w-full h-32 sm:h-48 object-cover">
                 <div class="m-4 text-center">
-                    <span class="font-bold">Arab Republic of Egypt</span>
+                    <span class="font-bold text-element">Arab Republic of Egypt</span>
                     <span class="block text-sm fact font-thin">Only Remaining Ancient Wonder in the World</span>
                 </div>
                 <div class="container py-3 bg-gray-300">
@@ -277,7 +275,7 @@
             <div class="card hover:shadow-lg">
                 <img src="../IMAGES/englandpic.jpg" alt="England" class="w-full h-32 sm:h-48 object-cover">
                 <div class="m-4 text-center">
-                    <span class="font-bold">The United Kingdom</span>
+                    <span class="font-bold text-element">The United Kingdom</span>
                     <span class="block text-sm fact font-thin"> Most famous drink among the British is Tea</span>
                 </div>
                 <div class="container py-3 bg-gray-300">
@@ -305,7 +303,7 @@
             <div class="card hover:shadow-lg">
                 <img src="../IMAGES/australia.jpg" alt="australia" class="w-full h-32 sm:h-48 object-cover">
                 <div class="m-4 text-center">
-                    <span class="font-bold">The Commonwealth of Australia</span>
+                    <span class="font-bold text-element">The Commonwealth of Australia</span>
                     <span class="block text-sm fact font-thin">Has over 60 separate wine <br> regions</span>
                 </div>
                 <div class="container py-3 bg-gray-300">
@@ -326,7 +324,7 @@
             <div class="card hover:shadow-lg">
                 <img src="../IMAGES/congopic.jpg" alt="congo" class="w-full h-32 sm:h-48 object-cover">
                 <div class="m-4 text-center">
-                    <span class="font-bold">The Democratic Republic of Congo</span>
+                    <span class="font-bold text-element">The Democratic Republic of Congo</span>
                     <span class="block text-sm fact font-thin">Congo played role in World <br>War II</span>
                 </div>
                 <div class="container py-3 bg-gray-300">
@@ -347,7 +345,7 @@
             <div class="card hover:shadow-lg">
                 <img src="../IMAGES/ethiopia.jpg" alt="egypt" class="w-full h-32 sm:h-48 object-cover">
                 <div class="m-4 text-center">
-                    <span class="font-bold">The Federal Democratic Republic of Ethiopia</span>
+                    <span class="font-bold text-element">The Federal Democratic Republic of Ethiopia</span>
                     <span class="block text-sm fact font-thin">Over half of Africa's mountains are in Ethiopia</span>
                 </div>
                 <div class="container py-3 bg-gray-300">

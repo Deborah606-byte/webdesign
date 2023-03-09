@@ -12,27 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
-    <header class="bg-cover about_header">
-        <div class="bg-black/60 flex justify-between">
-            <a class="ml-2 text-4xl font-extrabold text-heading">DAPS Search</a>
-            <img src="../IMAGES/compass.jpg" alt="compass" class="w-20 pt-1 mr-10 opacity-40">
-        </div>
-        <div class="py-20 mx-auto flex flex-col items-center gap-y-5 bg-black/60">
-            <div class="search-box flex justify-center items-center">
-                <form type="button" class="inline-block bg-white rounded-3xl px-5 w-[350px] border-2 border-slate-700 hover:border-slate-900 hover:border-[3px]">                 
-                    <input type="text" placeholder="Search for countries" class="bg-white placeholder:text-slate-400 text-sm outline-none px-7 py-3">
-                    <svg class="h-6 inline w-10 ml-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                    </svg> 
-                </form>
-                <!-- <button id="search-btn" class="border-2 border-gray-500 w-32 hover:text-heading ml-5 bg-black text-white h-10 rounded-full">Search</button> -->
-            </div>
-
-            <div class="py-2 px-20 font-thin text-sm text-white intro">
-                <span>More Than Just A Country Search!!</span>
-            </div>
-
-            <nav class="flex items-center justify-between px-20 py-6 max-w-screen-xl text-white uppercase font-bold bg-black/20 rounded-full">
+    <header class="bg-cover p-2 about_header">
+        <div class="flex justify-between mx-2">
+            <a class="ml-2 text-4xl font-extrabold name text-heading">DAPS Search</a>
+            <nav class="text-white uppercase font-bold">
                 <ul class="flex items-center justify-between space-x-8">
                     <li>
                         <a href="./index.html" class="hover:text-primary flex justify-end">
@@ -66,9 +49,21 @@
                     </li>
                 </ul>
             </nav>
+        </div>
 
+        <div class="py-24 mx-auto flex flex-col items-center gap-y-5">
+            <div class="search-box flex justify-center items-center">
+                <form id="search_form" class="inline-block bg-white rounded-3xl px-5 w-[350px] border-2 border-slate-700 hover:border-slate-900 hover:border-[3px] search-wrapper">                 
+                    <input id="country-inp" type="text" placeholder="Search for countries" class="bg-white placeholder:text-slate-400 text-sm outline-none px-7 py-3">
+                </form>  
+                <button id="search-btn" class="border-2 border-white w-20 hover:text-black hover:bg-white text-white h-10 rounded-r-3xl ml-2">Search</button>  
+            </div>
+            <div class="py-2 font-thin text-sm text-white intro text-center">
+                <span>More Than Just A Country Search!!</span>
+            </div>
         </div>
     </header>
+
 
     <section class="About_us">
         <!-- about us goes here -->
