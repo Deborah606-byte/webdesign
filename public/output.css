@@ -613,10 +613,6 @@ video {
   margin-left: 0.25rem;
 }
 
-.ml-10{
-  margin-left: 2.5rem;
-}
-
 .ml-12{
   margin-left: 3rem;
 }
@@ -635,10 +631,6 @@ video {
 
 .ml-3{
   margin-left: 0.75rem;
-}
-
-.ml-5{
-  margin-left: 1.25rem;
 }
 
 .mr-1{
@@ -689,10 +681,6 @@ video {
   display: inline-block;
 }
 
-.inline{
-  display: inline;
-}
-
 .flex{
   display: flex;
 }
@@ -737,10 +725,6 @@ video {
   width: 5rem;
 }
 
-.w-32{
-  width: 8rem;
-}
-
 .w-36{
   width: 9rem;
 }
@@ -771,10 +755,6 @@ video {
 
 .max-w-md{
   max-width: 28rem;
-}
-
-.max-w-screen-xl{
-  max-width: 1280px;
 }
 
 .grid-flow-row{
@@ -897,14 +877,6 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-black\/20{
-  background-color: rgb(0 0 0 / 0.2);
-}
-
-.bg-black\/60{
-  background-color: rgb(0 0 0 / 0.6);
-}
-
 .bg-gray-300{
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
@@ -939,11 +911,6 @@ video {
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
-}
-
-.px-20{
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
 
 .px-3{
@@ -986,11 +953,6 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .py-24{
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -1013,10 +975,6 @@ video {
 
 .pb-7{
   padding-bottom: 1.75rem;
-}
-
-.pt-1{
-  padding-top: 0.25rem;
 }
 
 .pt-4{
@@ -1121,10 +1079,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.opacity-40{
-  opacity: 0.4;
-}
-
 .shadow-2xl{
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -1196,14 +1150,14 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.hover\:text-heading:hover{
-  --tw-text-opacity: 1;
-  color: rgb(20 66 114 / var(--tw-text-opacity));
-}
-
 .hover\:text-primary:hover{
   --tw-text-opacity: 1;
   color: rgb(255 99 99 / var(--tw-text-opacity));
+}
+
+.hover\:text-element:hover{
+  --tw-text-opacity: 1;
+  color: rgb(10 38 71 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-lg:hover{

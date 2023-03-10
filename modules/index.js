@@ -1,17 +1,3 @@
-
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': '728ed5930amshe2bdcfd536a9ef3p18bb16jsn433a267eda83',
-// 		'X-RapidAPI-Host': 'country-facts.p.rapidapi.com'
-// 	}
-// };
-
-// fetch('https://country-facts.p.rapidapi.com/all', options)
-// 	.then(response => response.json())
-// 	.then(response => console.log(response))
-// 	.catch(err => console.error(err));
-
 let searchBtn = document.getElementById("search-btn");
 let countryInp = document.getElementById("country-inp");
 
@@ -28,15 +14,32 @@ searchBtn.addEventListener("click", () =>{
 		// console.log(Object.keys(data[0].currencies)[0]);
 		// console.log(data[0].currencies[Object.keys(data[0].currencies)].name);
 		// console.log(Object.values(data[0].languages).toString().split(",").join(","));
+		//console.log(data[0].maps.googleMaps);
+		// console.log(data[0].latlng[0]);
+		// console.log(data[0].timezones[0]);
 		console.log(data)
 
 		result.classList.remove("hidden");
 		result.innerHTML =`
+			<h2>${data[0].name.official}</h2>
 			<div class="main">
 				<div class="country_search_left">
 					<img src="${data[0].flags.svg}" class="flag-img">
-					<h2>${data[0].name.common}</h2>
-				</div>
+					<span>${data[0].maps.googleMaps}</span>
+
+					<div class="wrapper">
+						<div class="data-wrapper">
+						<h4>Latitide:</h4>
+						<span>${data[0].latlng[0]}</span>
+						</div>
+					</div>
+
+					<div class="wrapper">
+						<div class="data-wrapper">
+						<h4>Timezones:</h4>
+						<span>${data[0].timezones[0]}</span>
+						</div>
+					</div>
 
 				<div class="country_search_right">
 					<div class="wrapper">
