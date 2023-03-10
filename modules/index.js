@@ -17,20 +17,31 @@ searchBtn.addEventListener("click", () =>{
 		//console.log(data[0].maps.googleMaps);
 		// console.log(data[0].latlng[0]);
 		// console.log(data[0].timezones[0]);
-		console.log(data)
+		console.log(data);
 
 		result.classList.remove("hidden");
 		result.innerHTML =`
-			<h2>${data[0].name.official}</h2>
+			<h2>${data[0].name.common}</h2>
 			<div class="main">
 				<div class="country_search_left">
 					<img src="${data[0].flags.svg}" class="flag-img">
 					<span>${data[0].maps.googleMaps}</span>
+					<div class="data-wrapper">
+						<h4>Official Name:</h4>
+						<span>${data[0].name.official}</span>
+						</div>
 
 					<div class="wrapper">
 						<div class="data-wrapper">
 						<h4>Latitide:</h4>
 						<span>${data[0].latlng[0]}</span>
+						</div>
+					</div>
+
+					<div class="wrapper">
+						<div class="data-wrapper">
+						<h4>Longitude:</h4>
+						<span>${data[0].latlng[1]}</span>
 						</div>
 					</div>
 

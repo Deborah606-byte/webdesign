@@ -29,101 +29,110 @@ $(document).ready(function(){
         }
     })
 
-    // get search input
-    // $('#search_form').submit((event) => {
-    //     event.preventDefault();
-    //     const searchTerm = $('#search').val().toLowerCase();
-    //     if(searchTerm !== ""){
-    //         // remove any error element
-    //         $('#displaySearchError').remove();
-    //         $('#displaySearchedCountry').remove();
+//     let searchBtn = document.getElementById("search-btn");
+//     let countryInp = document.getElementById("country-inp");
 
-    //         // write a display message
-    //         const textToDisplay = `<p id="displaySearchTerm" class="text-center italic text-white font-medium">You searched for: ${searchTerm}</p>`;
-    //         $('.search-box').after(textToDisplay);
+// async function fetchCountry(countryName) {
+// 	let finalUrl = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
+// 	console.log(finalUrl);
+// 	const country = await fetch(finalUrl)
+	// fetch(finalUrl).then((response) => response.json()).then((data) => 
+		// console.log(data[0]);
+		// console.log(data[0].capital[0]);
+		// console.log(data[0].flags.svg);
+		// console.log(data[0].name.common);
+		// console.log(data[0].continents[0]);
+		// console.log(Object.keys(data[0].currencies)[0]);
+		// console.log(data[0].currencies[Object.keys(data[0].currencies)].name);
+		// console.log(Object.values(data[0].languages).toString().split(",").join(","));
+		//console.log(data[0].maps.googleMaps);
+		// console.log(data[0].latlng[0]);
+		// console.log(data[0].timezones[0]);
+// 		console.log(country);
+// 		return country
+// }
 
-    //         // clear the input
-    //         $('#search').val("");
+// searchBtn.addEventListener("click", async() =>{
+// 	let countryName = countryInp.value;
+	
+// 	const data = await fetchCountry(countryName);
+// 		// fetch(data.maps.googleMaps).then(r => console.log(JSON.stringify(r))); 
 
-    //         // fetch country from api
-    //         fetch(`https://restcountries.com/v3.1/name/${searchTerm}`)
-    //         .then(res => res.json() )
-    //         .then(data => {
-    //             if(data.status === 404){
-    //                  // write an error message to display
-    //                 const textToDisplay = `<p id="displaySearchError" class="py-1 text-center italic text-red-600 font-medium">Country ${data.message}</p>`;
-    //                 $('#displaySearchTerm').append(textToDisplay);
+// 		result.classList.remove("hidden");
+// 		result.innerHTML =`
+// 			<h2>${data[0].name.official}</h2>
+// 			<div class="main">
+// 				<div class="country_search_left">
+// 					<img src="${data[0].flags.svg}" class="flag-img">
+// 					<span>${data[0].maps.googleMaps}</span>
 
-    //                 // hide error element after 3 seconds
-    //                 setTimeout(() => {
-    //                     $('#displaySearchError').remove();
-    //                 }, 3000);
-    //             }else{
-    //                 const {capital, name: {official}, continents, population, subregion, flags: {png: flag, alt: description}, coatOfArms: { png: coat_of_arms}} = data[0];
+// 					<div class="wrapper">
+// 						<div class="data-wrapper">
+// 						<h4>Latitide:</h4>
+// 						<span>${data[0].latlng[0]}</span>
+// 						</div>
+// 					</div>
 
-    //                 const countryInfo =`
-    //                 <div id="displaySearchedCountry" class="p-10 my-5">
-    //                     <h2 class="text-center mx-auto text-3xl font-bold">You searched for: 
-    //                         <span class="font-[georgia] text-primary uppercase">
-    //                             ${searchTerm}
-    //                         </span>
-    //                     </h2>
+// 					<div class="wrapper">
+// 						<div class="data-wrapper">
+// 						<h4>Longitude:</h4>
+// 						<span>${data[0].latlng[1]}</span>
+// 						</div>
+// 					</div>
 
-    //                     <div class="grid grid-cols-1 md:grid-cols-2 gap-y-5 md:gap-y-0 mt-10">
-    //                         <div class="flex flex-col gap-y-5">
-    //                             <h3 class="text-xl">Name: <span class="font-semibold">${official}</span></h3>
-    //                             <p class="text-lg py-1">Capital: <span class="font-semibold">${capital[0]}</span></p>
-    //                             <p class="text-lg py-1">Continent:  <span class="font-semibold">${continents[0]}</span></p>
-    //                             <p class="text-lg py-1">Population:  <span class="font-semibold">${population}</span></p>
-    //                             <p class="text-lg py-1">Subregion:  <span class="font-semibold">${subregion}</span></p>
-    //                         </div>
+// 					<div class="wrapper">
+// 						<div class="data-wrapper">
+// 						<h4>Timezones:</h4>
+// 						<span>${data[0].timezones[0]}</span>
+// 						</div>
+// 					</div>
 
-    //                         <div class="flex flex-col gap-y-5">
-    //                             <div class="flex flex-col gap-y-3">
-    //                                 <h3 class="text-green-600 font-semibold uppercase">Flag</h3>
-    //                                 <img src="${flag}" alt="The flag of ${official}" class="w-[100px] h-[100px] object-contain aspect-square">
-    //                                 <p class="italic">${description}</p>
-    //                             </div>
+// 				<div class="country_search_right">
+// 					<div class="wrapper">
+// 						<div class="data-wrapper">
+// 						<h4>Capital:</h4>
+// 						<span>${data[0].capital[0]}</span>
+// 						</div>
+// 					</div>
 
-    //                             <div class="flex flex-col gap-y-3">
-    //                                 <h3 class="text-green-600 font-semibold uppercase">Coat Of Arms</h3>
-    //                                 <img src="${coat_of_arms}" alt="he coat of arms of ${official}" class="w-[100px] h-[100px] object-contain aspect-square">
-    //                             </div>
-    //                         </div>
-    //                     </div>
-    //                 </div>
-    //                 `
+// 					<div class="wrapper">
+// 						<div class="data-wrapper">
+// 						<h4>Continent:</h4>
+// 						<span>${data[0].continents[0]}</span>
+// 						</div>
+// 					</div>
 
-    //                 // append country infor to the dom
-    //                 $('#compare-countries').before(countryInfo);
+// 					<div class="wrapper">
+// 						<div class="data-wrapper">
+// 						<h4>Population:</h4>
+// 						<span>${data[0].population}</span>
+// 						</div>
+// 					</div>
 
-    //                 // scroll to country section
-    //                 $('html, body').animate({
-    //                     scrollTop: $("#displaySearchedCountry").offset().top
-    //                 }, 2000);
-    //             }
-    //         })
-    //         .catch(err => {
-    //             console.log(err);
-    //         })
+// 					<div class="wrapper">
+// 						<div class="data-wrapper">
+// 						<h4>Currency:</h4>
+// 						<span>${data[0].currencies[Object.keys(data[0].currencies)].name} - ${Object.keys(data[0].currencies)[0]}</span>
+// 						</div>
+// 					</div>
 
-    //         // hide search success message after 4 seconds
-    //         setTimeout(() => {
-    //             $('#displaySearchTerm').remove();
-    //         }, 4000);
-    //     }else{
-    //         // remove any previous success element
-    //         $('#displaySearchTerm').remove();
+// 					<div class="wrapper">
+// 						<div class="data-wrapper">
+// 						<h4>Common Language:</h4>
+// 						<span>${Object.values(data[0].languages).toString().split(",").join(",")}</span>
+// 						</div>
+// 					</div>
+// 				</div>
+// 			</div>
+// 			`;
+// 	})
+	// {
+	// 	if(countryName.length == 0){
+	// 		result.innerHTML = `<h3>The input field cannot be empty</h3>`;
+	// 	}
+	// 	else{
+	// 		result.innerHTML = `<h3>Please enter a valid country name</h3>`;
+	// 	}
+// });
 
-    //         // write an error message to display
-    //         const textToDisplay = `<p id="displaySearchError" class="text-center italic text-primary font-medium">Please enter a country to search</p>`;
-    //         $('.search-box').after(textToDisplay);
-
-    //         // hide error element after 3 seconds
-    //         setTimeout(() => {
-    //             $('#displaySearchError').remove();
-    //         }, 3000);
-    //     }
-        
-    // })
 });
