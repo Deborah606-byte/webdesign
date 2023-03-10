@@ -119,6 +119,10 @@ hr{
     flex-direction: row;
     justify-content: space-around;
 }
+#map{
+    height: 400px;
+    width: 400px;
+}
 
 
 

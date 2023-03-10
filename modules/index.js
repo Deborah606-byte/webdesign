@@ -1,7 +1,20 @@
 let searchBtn = document.getElementById("search-btn");
 let countryInp = document.getElementById("country-inp");
 
-	searchBtn.addEventListener("click", () =>{
+const loadMap = (lat, long)=>{
+	var map = L.map('map').setView([lat, long], 5);
+
+	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+
+	L.marker([lat, long]).addTo(map)
+		.bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+		.openPopup();
+}
+
+
+searchBtn.addEventListener("click", () =>{
 	let countryName = countryInp.value;
 	
 	let finalUrl = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
@@ -22,11 +35,11 @@ let countryInp = document.getElementById("country-inp");
 
 		result.classList.remove("hidden");
 		result.innerHTML =`
+
 			<h2>${data[0].name.common}</h2>
 			<div class="main">
 				<div class="country_search_left">
 					<img src="${data[0].flags.svg}" class="flag-img">
-					<span>${data[0].maps.googleMaps}</span>
 	
 					<div class="data-wrapper">
 						<h4>Official Name:</h4>
@@ -40,15 +53,9 @@ let countryInp = document.getElementById("country-inp");
 
 					<div class="wrapper">
 						<div class="data-wrapper">
-						<h4>Latitide:</h4>
-						<span>${data[0].latlng[0]}</span>
-						</div>
-					</div>
-
-					<div class="wrapper">
-						<div class="data-wrapper">
-						<h4>Longitude:</h4>
-						<span>${data[0].latlng[1]}</span>
+						<h4>Map:</h4>
+						<div id="map"></div>
+						
 						</div>
 					</div>
 
@@ -118,6 +125,8 @@ let countryInp = document.getElementById("country-inp");
 				</div>
 			</div>
 			`;
+		loadMap(data[0].latlng[0], data[0].latlng[1]);
+		
 	}).catch(() =>{
 		if(countryName.length == 0){
 			result.innerHTML = `<h3>The input field cannot be empty</h3>`;
@@ -126,4 +135,6 @@ let countryInp = document.getElementById("country-inp");
 			result.innerHTML = `<h3>Please enter a valid country name</h3>`;
 		}
 	})
+
+
 });
