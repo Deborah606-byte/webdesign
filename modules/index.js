@@ -1,8 +1,9 @@
 let searchBtn = document.getElementById("search-btn");
 let countryInp = document.getElementById("country-inp");
 
-searchBtn.addEventListener("click", () =>{
+	searchBtn.addEventListener("click", () =>{
 	let countryName = countryInp.value;
+	
 	let finalUrl = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
 	console.log(finalUrl);
 	fetch(finalUrl).then((response) => response.json()).then((data) => {
@@ -26,10 +27,16 @@ searchBtn.addEventListener("click", () =>{
 				<div class="country_search_left">
 					<img src="${data[0].flags.svg}" class="flag-img">
 					<span>${data[0].maps.googleMaps}</span>
+	
 					<div class="data-wrapper">
 						<h4>Official Name:</h4>
 						<span>${data[0].name.official}</span>
-						</div>
+					</div>
+
+					<div class="data-wrapper">
+						<h4>Coat Of Arms:</h4>
+						<img src="${data[0].coatOfArms.svg}" class="flag-img">
+					</div>
 
 					<div class="wrapper">
 						<div class="data-wrapper">
@@ -71,6 +78,27 @@ searchBtn.addEventListener("click", () =>{
 						<div class="data-wrapper">
 						<h4>Population:</h4>
 						<span>${data[0].population}</span>
+						</div>
+					</div>
+
+					<div class="wrapper">
+						<div class="data-wrapper">
+						<h4>Independent:</h4>
+						<span>${data[0].independent}</span>
+						</div>
+					</div>
+
+					<div class="wrapper">
+						<div class="data-wrapper">
+						<h4>Start of Week:</h4>
+						<span>${data[0].startOfWeek}</span>
+						</div>
+					</div>
+
+					<div class="wrapper">
+						<div class="data-wrapper">
+						<h4>Subregion:</h4>
+						<span>${data[0].subregion}</span>
 						</div>
 					</div>
 
