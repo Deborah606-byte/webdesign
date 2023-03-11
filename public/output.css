@@ -657,10 +657,6 @@ video {
   margin-top: 0.5rem;
 }
 
-.mt-20{
-  margin-top: 5rem;
-}
-
 .mt-4{
   margin-top: 1rem;
 }
@@ -973,6 +969,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pb-7{
   padding-bottom: 1.75rem;
 }
@@ -1153,11 +1154,6 @@ video {
 .hover\:text-primary:hover{
   --tw-text-opacity: 1;
   color: rgb(255 99 99 / var(--tw-text-opacity));
-}
-
-.hover\:text-element:hover{
-  --tw-text-opacity: 1;
-  color: rgb(10 38 71 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-lg:hover{

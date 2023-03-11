@@ -90,38 +90,47 @@ hr{
 }
 .flag-img{
     width: 300px;
+    height: 300px;
     min-width: 7.5em;
 }
 .country_result h2{
-    font-weight: 600;
-    color:#00344A;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-left: 6.5em;
+    text-align: center;
+
 }
 .data-wrapper{
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     letter-spacing: 0.3px;
 }
 .country_result h4{
     display: inline;
-    font-weight: 500;
-    color: #FA1515;
+    font-weight: 700;
+    color: #144272;
 }
 .country_result span{
-    color: #00344A;
+    color: #0A2647;
+    font-weight: lighter;
 }
 .country_result h3{
-    color: #FA1515;
+    color: #144272;
+    text-align: center;
+    background-color: rgba(255,255,255,.2);
+    box-shadow: 0 15px 15px rgba(0,0,0,.2);
+    font-weight: 700;
 }
 .main{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+.country_search_left,
+.country_search_right{
+    width: 50%;
+}
 #map{
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
 }
 
 

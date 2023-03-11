@@ -36,26 +36,27 @@ searchBtn.addEventListener("click", () =>{
 		result.classList.remove("hidden");
 		result.innerHTML =`
 
-			<h2>${data[0].name.common}</h2>
+			<h2 class="text-heading text-3xl font-bold">${data[0].name.common}</h2>
 			<div class="main">
 				<div class="country_search_left">
-					<img src="${data[0].flags.svg}" class="flag-img">
-	
-					<div class="data-wrapper">
-						<h4>Official Name:</h4>
-						<span>${data[0].name.official}</span>
-					</div>
-
-					<div class="data-wrapper">
-						<h4>Coat Of Arms:</h4>
-						<img src="${data[0].coatOfArms.svg}" class="flag-img">
+					<div class="wrapper">
+						<div class="data-wrapper">
+							<h4>Map:</h4>
+							<div id="map"></div>
+						</div>	
 					</div>
 
 					<div class="wrapper">
 						<div class="data-wrapper">
-						<h4>Map:</h4>
-						<div id="map"></div>
-						
+						<h4>Latitude:</h4>
+						<span>${data[0].latlng[0]}</span>
+						</div>
+					</div>
+
+					<div class="wrapper">
+						<div class="data-wrapper">
+						<h4>Longitude:</h4>
+						<span>${data[0].latlng[1]}</span>
 						</div>
 					</div>
 
@@ -66,7 +67,21 @@ searchBtn.addEventListener("click", () =>{
 						</div>
 					</div>
 
+					<div class="data-wrapper">
+						<h4>Coat Of Arms:</h4>
+						<img src="${data[0].coatOfArms.svg}" class="flag-img">
+					</div>
+
+				</div>
+
 				<div class="country_search_right">
+					<img src="${data[0].flags.svg}" class="flag-img">
+
+					<div class="data-wrapper">
+						<h4>Official Name:</h4>
+						<span>${data[0].name.official}</span>
+					</div>
+					
 					<div class="wrapper">
 						<div class="data-wrapper">
 						<h4>Capital:</h4>
@@ -120,6 +135,13 @@ searchBtn.addEventListener("click", () =>{
 						<div class="data-wrapper">
 						<h4>Common Language:</h4>
 						<span>${Object.values(data[0].languages).toString().split(",").join(",")}</span>
+						</div>
+					</div>
+
+					<div class="wrapper">
+						<div class="data-wrapper">
+						<h4>UN Member:</h4>
+						<span>${data[0].unMember}</span>
 						</div>
 					</div>
 				</div>
