@@ -1,7 +1,8 @@
-let searchBtn = document.getElementById("search-btn");
+// let searchBtn = document.getElementById("search-btn");
+let searchForm = document.getElementById("search_form");
 let countryInp = document.getElementById("country-inp");
 
-const loadMap = (lat, long)=>{
+const loadMap = (lat, long, country)=>{
 	var map = L.map('map').setView([lat, long], 5);
 
 	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -9,12 +10,14 @@ const loadMap = (lat, long)=>{
 	}).addTo(map);
 
 	L.marker([lat, long]).addTo(map)
-		.bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+		.bindPopup(`${country}`)
 		.openPopup();
 }
 
 
-searchBtn.addEventListener("click", () =>{
+searchForm.addEventListener("submit", (e) =>{
+	e.preventDefault();
+
 	let countryName = countryInp.value;
 	
 	let finalUrl = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
@@ -147,15 +150,22 @@ searchBtn.addEventListener("click", () =>{
 				</div>
 			</div>
 			`;
-		loadMap(data[0].latlng[0], data[0].latlng[1]);
+		loadMap(data[0].latlng[0], data[0].latlng[1], data[0].name.common);
+
+		countryInp.value = "";
 		
 	}).catch(() =>{
 		if(countryName.length == 0){
-			result.innerHTML = `<h3>Please enter a country</h3>`;
+			result.innerHTML = `<h3 class="text-lg">Please enter a country</h3>`;
 		}
 		else{
-			result.innerHTML = `<h3>Please enter a valid country name</h3>`;
+			result.innerHTML = `<h3 class="text-lg">Please enter a valid country name</h3>`;
 		}
+
+		// hide the error after 3 seconds
+		setTimeout(() => {
+			result.classList.add('hidden');
+		}, 3000);
 	})
 
 
