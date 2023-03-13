@@ -90,8 +90,10 @@ hr{
 }
 .flag-img{
     width: 300px;
-    height: 300px;
+    height: 250px;
     min-width: 7.5em;
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
 .country_result h2{
     text-transform: uppercase;
@@ -146,5 +148,9 @@ hr{
 }
 .About_us{
     background-color: #ffff;
+}
+.image_about{
+    width: 200px;
+    height: 200px;
 }
 
