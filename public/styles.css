@@ -153,10 +153,11 @@ hr{
 
 /* landing page */
 .landing_page{
-    background-image: url('../IMAGES/mxi-art-pHL3AmK5dUU-unsplash.jpg');
+    background-image: url('../IMAGES/colin-watts-tK7Itp99R6M-unsplash.jpg');
     background-size: cover;
     background-position:center;
     overflow: hidden;
+    /* position: absolute; */
     }
   .landing_header{
     position: fixed;
@@ -186,12 +187,23 @@ hr{
     display: flex;
     flex-flow:column wrap;
     color: white;
-    top: 42%;
+    top: 47%;
     margin-left: 1.5em;
   }
-  .hero .content .image img{
+  /* .hero .content .image img{
      float: right;
      margin-top: 3em;
      margin-right: 1em;
+     } */
+     .hero .content .travellers{
+        float: right;
+        display: flex;
+        flex-flow: row;
+     }
+     .land_travellers{
+        width: 200px;
+        height: 220px;
+        margin-top: 21em;
+        
      }
   
