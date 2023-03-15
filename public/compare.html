@@ -21,9 +21,9 @@
 
 </head>
 <body>
-    <header class="bg-cover p-2 home_heading">
+    <header class="bg-cover p-2 compare_heading">
         <div class="flex justify-between mx-2">
-            <a class="ml-2 text-4xl font-extrabold name text-heading">DAPS Search</a>
+            <a class="ml-2 text-4xl font-extrabold name text-white">DAPS Search</a>
             <nav class="text-white uppercase font-bold">
                 <ul class="flex items-center justify-between space-x-8">
                     <li>
@@ -60,49 +60,39 @@
             </nav>
         </div>
 
-        <div class="py-24 mx-auto flex flex-col items-center gap-y-5">
-            <form id="search_form" class="search-box flex justify-center items-center mx-auto">
-                <div class="bg-white rounded-3xl px-5 w-[350px] border-2 border-slate-700 hover:border-slate-900 hover:border-[3px] search-wrapper">                 
-                    <input id="country-inp" type="text" placeholder="Search for countries" class="bg-white placeholder:text-slate-400 text-sm outline-none px-7 py-3">
-                </div>  
-                <button type="submit" id="search-btn" class="border-2 border-white w-20 hover:text-black hover:bg-white text-white h-10 rounded-r-3xl ml-2">Search</button>  
-            </form>
-            <div class="py-2 font-thin text-sm text-white intro text-center mx-auto">
-                <span>More Than Just A Country Search!!</span>
+        <div class="compare py-24">
+            <div class="mt-24 flex justify-center" id="compare-countries">
+                <div>
+                    <form id="search_form" class="bg-white rounded-3xl px-5 w-[250px] border-2 border-slate-700 hover:border-slate-900 hover:border-[3px] mr-2">                 
+                        <input id="search" type="text" placeholder="Country/City" class="bg-white placeholder:text-slate-400 text-sm outline-none px-5 py-3">
+                    </form>
+                </div>
+                <div>
+                    <span class="text-element text-3xl font-extrabold mr-2">vs</span>
+                </div>
+                <div>
+                    <form id="search_form" class="bg-white rounded-3xl px-5 w-[250px] border-2 border-slate-700 hover:border-slate-900 hover:border-[3px]">                 
+                        <input id="search" type="text" placeholder="Country/City" class="bg-white placeholder:text-slate-400 text-sm outline-none px-5 py-3">
+                    </form>
+                </div>
+                <div>
+                    <input type="submit" value="Search" class="border-2 border-white w-20 hover:text-black hover:bg-white text-white h-10 rounded-r-3xl ml-2 mt-1">
+                </div>
             </div>
-        </div>
+
+            <div class="mt-10 font-thin text-center text-white bg-black/60 rounded-full">
+                <span class="">We aim to help our users to compare the costs of living in various cities across the world.</span>
+                <br>
+                <span>With just a click, a user can know the living standard of a country.</span>
+            </div>
+            
+           </div>
     </header>
 
     <!-- search results -->
     <div id="result" class="country_result py-5 px-5 hidden">
 
     </div>
-
-
-      <!-- compare countries go here-->
-      <section>
-        <div class="compare">
-         <h4 class="p-3 font-bold text-center text text-3xl text-heading">Compare The Costs of Living in Countries Capitals</h4>
-         <div class="bg-white p-4 flex justify-evenly" id="compare-countries">
-             <div>
-                 <form id="search_form" class="bg-white rounded-3xl px-3 w-[250px] border-2 border-slate-700 hover:border-slate-900 hover:border-[3px]">                 
-                     <input id="search" type="text" placeholder="Country/City" class="bg-white placeholder:text-slate-400 text-sm outline-none px-1 py-1">
-                 </form>
-             </div>
-             <div>
-                 <span class="text-element font-extrabold">vs</span>
-             </div>
-             <div>
-                 <form id="search_form" class="bg-white rounded-3xl px-3 w-[250px] border-2 border-slate-700 hover:border-slate-900 hover:border-[3px]">                 
-                     <input id="search" type="text" placeholder="Country/City" class="bg-white placeholder:text-slate-400 text-sm outline-none px-1 py-1">
-                 </form>
-             </div>
-             <div>
-                 <input type="submit" value="Search" class="block border-2 bg-black w-36 text-white h-8 rounded-full hover:text-primary">
-             </div>
-         </div>
-        </div>
-       </section>
 
        <!-- JavaScript goes here -->
        <script type="module" src="../modules/index.js"></script>
