@@ -221,6 +221,13 @@
                         </div>
                     </div>
 
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Buy Apartment Prices:</h4>
+                            <span>${showList(cityTwo[17])}</span>
+                        </div>
+                    </div>
+
                 </div>
                 
 
