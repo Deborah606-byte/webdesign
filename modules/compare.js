@@ -2,6 +2,9 @@
     let inputTwo = document.getElementById("search_two");
     let form = document.getElementById("search_form");
 
+    function showList(list){
+        return list.map(({Cost,Value})=>`Item:${Cost} Cost:${Value}`);
+    }
 
     form.addEventListener("submit", async (e) => {
         // prevent form from submitting and refreshing page on submission
@@ -23,6 +26,206 @@
         //extract data into an object
         const cityOne = {...Object.values(cityOneData)};
         const cityTwo = {...Object.values(cityTwoData)};
+
+        result.innerHTML =`
+            <div class="main">
+                <div class="country_search_left">
+                    <h2 class="text-heading text-3xl font-bold">${cityOne[2]}</h2>
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Country:</h4>
+                            <span>${cityOne[1]}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Cost of Living(Per Month):</h4>
+                            <span>${cityOne[3]}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Currency Used:</h4>
+                            <span>${cityOne[4]}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <span>${cityOne[5]}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Restaurant Prices:</h4>
+                            <span>${showList(cityOne[8])}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Market Prices:</h4>
+                            <span>${showList(cityOne[9])}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Transportation Prices:</h4>
+                            <span>${showList(cityOne[10])}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Utilities Per Month Prices:</h4>
+                            <span>${showList(cityOne[11])}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Sports and Leisure Prices:</h4>
+                            <span>${showList(cityOne[12])}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Salaries and Financing Prices:</h4>
+                            <span>${showList(cityOne[13])}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Childcare Prices:</h4>
+                            <span>${showList(cityOne[14])}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Clothing and Shoes Prices:</h4>
+                            <span>${showList(cityOne[15])}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Rent Per Month Prices:</h4>
+                            <span>${showList(cityOne[16])}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Buy Apartment Prices:</h4>
+                            <span>${showList(cityOne[17])}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="country_search_right">
+                    <h2 class="text-heading text-3xl font-bold">${cityTwo[2]}</h2>
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Country:</h4>
+                            <span>${cityTwo[1]}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Cost of Living(Per Month):</h4>
+                            <span>${cityTwo[3]}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Currency Used:</h4>
+                            <span>${cityTwo[4]}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <span>${cityTwo[5]}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Restaurant Prices:</h4>
+                            <span>${showList(cityTwo[8])}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Market Prices:</h4>
+                            <span>${showList(cityTwo[9])}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Transportation Prices:</h4>
+                            <span>${showList(cityTwo[10])}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Utilities Per Month Prices:</h4>
+                            <span>${showList(cityTwo[11])}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Sports and Leisure Prices:</h4>
+                            <span>${showList(cityTwo[12])}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Salaries and Financing Prices:</h4>
+                            <span>${showList(cityTwo[13])}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Childcare Prices:</h4>
+                            <span>${showList(cityTwo[14])}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Clothing and Shoes Prices:</h4>
+                            <span>${showList(cityTwo[15])}</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="data-wrapper">
+                            <h4>Rent Per Month Prices:</h4>
+                            <span>${showList(cityTwo[16])}</span>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+            </div>
+            `;
 
         console.log(cityOne);
         console.log(cityTwo);
@@ -51,7 +254,9 @@
 
             const data = await res.json();
             
+
             return data;
+          
         } catch (err) {
             console.log(err);
         }
