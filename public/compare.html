@@ -60,22 +60,34 @@
             </nav>
         </div>
 
-        <div class="compare py-24">
-            <div class="mt-24" id="compare-countries">
-                <form class="flex flex-col items-center gap-y-3 max-w-[350px] p-4 mx-auto" id="search_form">
-                    <div>
-                        <input type="text" placeholder="Eg: Accra/Ghana" class="px-7 py-2 w-full rounded-full" id="search_one" required>
-                    </div>
-                    <span>VS</span>
-                    <div>
-                        <input type="text" placeholder="Eg: Accra/Ghana" id="search_two" required>
-                    </div>
+        <div class="compare py-24 mx-5 sm:mx-auto">
+            <div class="mt-24 bg-black/70 p-10 shadow-xl max-w-full sm:max-w-[500px] md:max-w-[400px] mx-auto" id="compare-countries">
+                <h2 class="text-center text-primary text-xl py-3">Compare Two Countries</h2>
 
-                    <button type="submit">Search</button>
+                <form class="flex flex-col items-center gap-y-5 p-4 mx-auto" id="search_form">
+                    <input 
+                        type="text" 
+                        placeholder="Eg: Accra/Ghana" 
+                        class="px-7 py-2 w-full rounded-full" 
+                        id="search_one" 
+                        required
+                    >
+
+                    <span class="text-primary text-2xl font-medium">VS</span>
+
+                    <input 
+                        type="text" 
+                        placeholder="Eg: Abuja/Nigeria" 
+                        id="search_two"
+                        class="px-7 py-2 w-full rounded-full" 
+                        required
+                    >
+
+                    <button type="submit" class="mt-6 hover:text-white hover:bg-primary px-5 py-2 rounded-full w-full bg-transparent border-primary border-2 text-primary">Search</button>
                 </form>
             </div>
 
-            <div class="mt-10 font-thin text-center text-white bg-black/60 rounded-full">
+            <div class="mt-14 font-thin text-center text-white md:text-lg">
                 <span class="">We aim to help our users to compare the costs of living in various cities across the world.</span>
                 <br>
                 <span>With just a click, a user can know the living standard of a country.</span>
