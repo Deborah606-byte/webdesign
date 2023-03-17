@@ -3,7 +3,12 @@
     let form = document.getElementById("search_form");
 
     function showList(list){
-        return list.map(({Cost,Value})=>`Item:${Cost} Cost:${Value}`);
+        return list?.map(({Cost, Value}) =>
+            `<tr>
+                <td class="border-2 border-black p-2">${Cost}</td>
+                <td class="border-2 border-black p-2">${Value}</td>
+            </tr>`
+        ).join(" ");
     }
 
     form.addEventListener("submit", async (e) => {
@@ -59,72 +64,176 @@
                     </div>
 
                     <div class="wrapper">
-                        <div class="data-wrapper">
+                        <div class="data-wrapper flex flex-col items-start">
                             <h4>Restaurant Prices:</h4>
-                            <span>${showList(cityOne[8])}</span>
+
+                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                                <thead>
+                                    <tr>
+                                        <th class="text-start border-2 border-slate-800 py-2 w-[100px]">Item</th>
+                                        <th class="border-2 border-slate-800 py-2">Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${showList(cityOne[8])}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
                     <div class="wrapper">
-                        <div class="data-wrapper">
+                        <div class="data-wrapper flex flex-col items-start">
                             <h4>Market Prices:</h4>
-                            <span>${showList(cityOne[9])}</span>
+
+                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                                <thead>
+                                    <tr>
+                                        <th class="text-start border-2 border-slate-800 py-2 w-[100px]">Item</th>
+                                        <th class="border-2 border-slate-800 py-2">Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${showList(cityOne[9])}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
                     <div class="wrapper">
-                        <div class="data-wrapper">
+                        <div class="data-wrapper flex flex-col items-start">
                             <h4>Transportation Prices:</h4>
-                            <span>${showList(cityOne[10])}</span>
+
+                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                                <thead>
+                                    <tr>
+                                        <th class="text-start border-2 border-slate-800 py-2 w-[100px]">Item</th>
+                                        <th class="border-2 border-slate-800 py-2">Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${showList(cityOne[10])}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
                     <div class="wrapper">
-                        <div class="data-wrapper">
+                        <div class="data-wrapper flex flex-col items-start">
                             <h4>Utilities Per Month Prices:</h4>
-                            <span>${showList(cityOne[11])}</span>
+
+                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                                <thead>
+                                    <tr>
+                                        <th class="text-start border-2 border-slate-800 py-2 w-[100px]">Item</th>
+                                        <th class="border-2 border-slate-800 py-2">Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${showList(cityOne[11])}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
                     <div class="wrapper">
-                        <div class="data-wrapper">
+                        <div class="data-wrapper flex flex-col items-start">
                             <h4>Sports and Leisure Prices:</h4>
-                            <span>${showList(cityOne[12])}</span>
+                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                                <thead>
+                                  <tr>
+                                        <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
+                                        <th classtext-start ="border-2 border-slate-800 py-2">Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${showList(cityOne[12])}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
                     <div class="wrapper">
-                        <div class="data-wrapper">
+                        <div class="data-wrapper flex flex-col items-start">
                             <h4>Salaries and Financing Prices:</h4>
-                            <span>${showList(cityOne[13])}</span>
+                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                                <thead>
+                                  <tr>
+                                        <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
+                                        <th classtext-start ="border-2 border-slate-800 py-2">Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${showList(cityOne[13])}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
                     <div class="wrapper">
-                        <div class="data-wrapper">
+                        <div class="data-wrapper flex flex-col items-start">
                             <h4>Childcare Prices:</h4>
-                            <span>${showList(cityOne[14])}</span>
+                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                                <thead>
+                                  <tr>
+                                        <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
+                                        <th classtext-start ="border-2 border-slate-800 py-2">Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${showList(cityOne[14])}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
                     <div class="wrapper">
-                        <div class="data-wrapper">
+                        <div class="data-wrapper flex flex-col items-start">
                             <h4>Clothing and Shoes Prices:</h4>
-                            <span>${showList(cityOne[15])}</span>
+                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                                <thead>
+                                  <tr>
+                                        <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
+                                        <th classtext-start ="border-2 border-slate-800 py-2">Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${showList(cityOne[15])}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
                     <div class="wrapper">
-                        <div class="data-wrapper">
+                        <div class="data-wrapper flex flex-col items-start">
                             <h4>Rent Per Month Prices:</h4>
-                            <span>${showList(cityOne[16])}</span>
+                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                                <thead>
+                                  <tr>
+                                        <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
+                                        <th classtext-start ="border-2 border-slate-800 py-2">Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${showList(cityOne[16])}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
                     <div class="wrapper">
-                        <div class="data-wrapper">
+                        <div class="data-wrapper flex flex-col items-start">
                             <h4>Buy Apartment Prices:</h4>
-                            <span>${showList(cityOne[17])}</span>
+                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                                <thead>
+                                  <tr>
+                                        <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
+                                        <th classtext-start ="border-2 border-slate-800 py-2">Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${showList(cityOne[17])}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -159,72 +268,172 @@
                     </div>
 
                     <div class="wrapper">
-                        <div class="data-wrapper">
+                        <div class="data-wrapper flex flex-col items-start">
                             <h4>Restaurant Prices:</h4>
-                            <span>${showList(cityTwo[8])}</span>
+                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                                <thead>
+                                  <tr>
+                                        <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
+                                        <th classtext-start ="border-2 border-slate-800 py-2">Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${showList(cityTwo[8])}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
                     <div class="wrapper">
-                        <div class="data-wrapper">
+                        <div class="data-wrapper flex flex-col items-start">
                             <h4>Market Prices:</h4>
-                            <span>${showList(cityTwo[9])}</span>
+                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                                <thead>
+                                  <tr>
+                                        <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
+                                        <th classtext-start ="border-2 border-slate-800 py-2">Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${showList(cityTwo[9])}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
                     <div class="wrapper">
-                        <div class="data-wrapper">
+                        <div class="data-wrapper flex flex-col items-start">
                             <h4>Transportation Prices:</h4>
-                            <span>${showList(cityTwo[10])}</span>
+                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                                <thead>
+                                  <tr>
+                                        <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
+                                        <th classtext-start ="border-2 border-slate-800 py-2">Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${showList(cityTwo[10])}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
                     <div class="wrapper">
-                        <div class="data-wrapper">
+                        <div class="data-wrapper flex flex-col items-start">
                             <h4>Utilities Per Month Prices:</h4>
-                            <span>${showList(cityTwo[11])}</span>
+                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                                <thead>
+                                  <tr>
+                                        <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
+                                        <th classtext-start ="border-2 border-slate-800 py-2">Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${showList(cityTwo[11])}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
                     <div class="wrapper">
-                        <div class="data-wrapper">
+                        <div class="data-wrapper flex flex-col items-start">
                             <h4>Sports and Leisure Prices:</h4>
-                            <span>${showList(cityTwo[12])}</span>
+                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                                <thead>
+                                  <tr>
+                                        <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
+                                        <th classtext-start ="border-2 border-slate-800 py-2">Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${showList(cityTwo[12])}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
                     <div class="wrapper">
-                        <div class="data-wrapper">
+                        <div class="data-wrapper flex flex-col items-start">
                             <h4>Salaries and Financing Prices:</h4>
-                            <span>${showList(cityTwo[13])}</span>
+                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                                <thead>
+                                  <tr>
+                                        <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
+                                        <th classtext-start ="border-2 border-slate-800 py-2">Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${showList(cityTwo[13])}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
                     <div class="wrapper">
-                        <div class="data-wrapper">
+                        <div class="data-wrapper flex flex-col items-start">
                             <h4>Childcare Prices:</h4>
-                            <span>${showList(cityTwo[14])}</span>
+                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                                <thead>
+                                  <tr>
+                                        <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
+                                        <th classtext-start ="border-2 border-slate-800 py-2">Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${showList(cityTwo[14])}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
                     <div class="wrapper">
-                        <div class="data-wrapper">
+                        <div class="data-wrapper flex flex-col items-start">
                             <h4>Clothing and Shoes Prices:</h4>
-                            <span>${showList(cityTwo[15])}</span>
+                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                                <thead>
+                                  <tr>
+                                        <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
+                                        <th classtext-start ="border-2 border-slate-800 py-2">Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${showList(cityTwo[15])}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
                     <div class="wrapper">
-                        <div class="data-wrapper">
+                        <div class="data-wrapper flex flex-col items-start">
                             <h4>Rent Per Month Prices:</h4>
-                            <span>${showList(cityTwo[16])}</span>
+                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                                <thead>
+                                  <tr>
+                                        <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
+                                        <th classtext-start ="border-2 border-slate-800 py-2">Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${showList(cityTwo[16])}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
                     <div class="wrapper">
-                        <div class="data-wrapper">
+                        <div class="data-wrapper flex flex-col items-start">
                             <h4>Buy Apartment Prices:</h4>
-                            <span>${showList(cityTwo[17])}</span>
+                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                                <thead>
+                                  <tr>
+                                        <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
+                                        <th classtext-start ="border-2 border-slate-800 py-2">Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${showList(cityTwo[17])}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
@@ -242,7 +451,11 @@
         inputTwo.value = "";
 
         // do something with the data received
-        
+        result.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+            inline: "nearest"
+        })
     });
 
 

@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 .home_heading{
     background-image: url('../IMAGES/WorldMap.svg');
 }
@@ -105,6 +110,11 @@ hr{
     margin-bottom: 2em;
     letter-spacing: 0.3px;
 }
+
+.data-wrapper h4{
+    margin: 5px 0;
+}
+
 .country_result h4{
     display: inline;
     font-weight: 700;
@@ -129,8 +139,18 @@ hr{
 }
 .country_search_left,
 .country_search_right{
-    width: 50%;
+    width: 45%;
 }
+
+table{
+    width: 100%;
+}
+
+table th, table td{
+    text-align: start;
+    padding: 0 10px;
+}
+
 #map{
     height: 300px;
     width: 300px;
@@ -153,11 +173,11 @@ hr{
 
 /* landing page */
 .landing_page{
-    background-image: url('../IMAGES/colin-watts-tK7Itp99R6M-unsplash.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../IMAGES/colin-watts-tK7Itp99R6M-unsplash.jpg');
     background-size: cover;
     background-position:center;
     overflow: hidden;
-    /* position: absolute; */
+    min-height: 100vh;
     }
   .landing_header{
     width: 100%;
@@ -208,4 +228,6 @@ hr{
      /* compare page */
      .compare_heading{
         background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../IMAGES/jeremy-stewardson-x0EvY2vUVbI-unsplash.jpg');
+        background-size: cover;
+        height: 100vh;
      }
