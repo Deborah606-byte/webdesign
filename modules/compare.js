@@ -35,7 +35,7 @@
         result.innerHTML =`
             <div class="main">
                 <div class="country_search_left">
-                    <h2 class="text-heading text-3xl font-bold">${cityOne[2]}</h2>
+                    <h2 class="text-heading text-3xl font-bold heading">${cityOne[2]}</h2>
                     <div class="wrapper">
                         <div class="data-wrapper">
                             <h4>Country:</h4>
