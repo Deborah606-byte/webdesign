@@ -32,6 +32,7 @@
         const cityOne = {...Object.values(cityOneData)};
         const cityTwo = {...Object.values(cityTwoData)};
 
+        result.classList.remove("hidden");
         result.innerHTML =`
             <div class="main">
                 <div class="country_search_left">
@@ -479,5 +480,10 @@
           
         } catch (err) {
             console.log(err);
+
+            // hide the error after 3 seconds
+            setTimeout(() => {
+                result.classList.add('hidden');
+            }, 3000);
         }
     }
