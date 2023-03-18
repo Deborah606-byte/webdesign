@@ -230,6 +230,7 @@ table th, table td{
         background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../IMAGES/artem-kniaz-uBlFp-APuG0-unsplash.jpg');
         background-size: cover;
      }
-     /* .country_search_left .heading{
-        text-decoration: dotted;
-     } */
+     .country_result .heading_city{
+        text-decoration: underline;
+        text-align: left;
+     }

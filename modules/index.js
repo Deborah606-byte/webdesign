@@ -1,6 +1,6 @@
 // let searchBtn = document.getElementById("search-btn");
 let searchForm = document.getElementById("search_form");
-let countryInp = document.getElementById("country-inp");
+let countryInp = document.getElementById("country-info");
 
 const loadMap = (lat, long, country)=>{
 	var map = L.map('map').setView([lat, long], 5);
