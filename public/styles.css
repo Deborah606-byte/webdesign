@@ -158,7 +158,8 @@ table th, table td{
 
 /* About */
 .about_header{
-    background-image: url(../IMAGES/about.svg);
+    background-image: url(../IMAGES/daniel-mirlea-kPyN4psB90I-unsplash.jpg);
+    background-position: center;
 }
 .inquiry{
     background-color: #144272;
@@ -169,6 +170,14 @@ table th, table td{
 .image_about{
     width: 200px;
     height: 200px;
+}
+.about_image{
+    width: 15em;
+    height: 15em;
+}
+.hero{
+    width: 25em;
+    height: 25em;
 }
 
 /* landing page */
@@ -234,3 +243,10 @@ table th, table td{
         text-decoration: underline;
         text-align: left;
      }
+     #loader {
+        display: none;
+      }
+      
+      #loader.show {
+        display: block;
+      }
