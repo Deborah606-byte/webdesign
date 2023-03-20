@@ -158,8 +158,9 @@ table th, table td{
 
 /* About */
 .about_header{
-    background-image: url(../IMAGES/daniel-mirlea-kPyN4psB90I-unsplash.jpg);
+    background-image: linear-gradient(rgba(18, 23, 62, 0.5), rgba(15, 19, 35, 0.5)),url('../IMAGES/daniel-mirlea-kPyN4psB90I-unsplash.jpg');
     background-position: center;
+    height: 80svh;
 }
 .inquiry{
     background-color: #144272;
@@ -176,8 +177,8 @@ table th, table td{
     height: 15em;
 }
 .hero{
-    width: 25em;
-    height: 25em;
+    width: 100%;
+    height: 100%;
 }
 
 /* landing page */
@@ -192,7 +193,8 @@ table th, table td{
     width: 100%;
     }
   .hero .content{
-    position: relative;
+    display: flex;
+    justify-content: space-between;
   }
   .hero .content .info{
     position: absolute;
@@ -200,14 +202,6 @@ table th, table td{
     left: 10em;
     width: 500px;
     text-align:justify;
-  }
-
-  .hero .content .info button{
-    display: block;
-    color: #0E2A47;
-    background-color: white;
-    margin-top: 2em;
-    cursor: pointer;
   }
   .index_icons{
     position: fixed;
@@ -223,9 +217,8 @@ table th, table td{
      margin-right: 1em;
      } */
      .hero .content .travellers{
-        float: right;
         display: flex;
-        flex-flow: row;
+        flex-direction: row;
      }
      .land_travellers{
         width: 200px;

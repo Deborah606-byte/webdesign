@@ -553,16 +553,8 @@ video {
   grid-column: span 3 / span 3;
 }
 
-.col-span-5{
-  grid-column: span 5 / span 5;
-}
-
 .col-span-7{
   grid-column: span 7 / span 7;
-}
-
-.m-2{
-  margin: 0.5rem;
 }
 
 .m-4{
@@ -642,10 +634,6 @@ video {
   margin-left: 0.75rem;
 }
 
-.ml-5{
-  margin-left: 1.25rem;
-}
-
 .mr-1{
   margin-right: 0.25rem;
 }
@@ -670,16 +658,12 @@ video {
   margin-right: 1.5rem;
 }
 
-.mt-14{
-  margin-top: 3.5rem;
+.mt-10{
+  margin-top: 2.5rem;
 }
 
 .mt-2{
   margin-top: 0.5rem;
-}
-
-.mt-24{
-  margin-top: 6rem;
 }
 
 .mt-4{
@@ -692,14 +676,6 @@ video {
 
 .mt-6{
   margin-top: 1.5rem;
-}
-
-.mt-20{
-  margin-top: 5rem;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
 }
 
 .block{
@@ -840,6 +816,10 @@ video {
        column-gap: 3.5rem;
 }
 
+.gap-y-10{
+  row-gap: 2.5rem;
+}
+
 .gap-y-5{
   row-gap: 1.25rem;
 }
@@ -854,6 +834,24 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.-space-x-14 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(-3.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(-3.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-14 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(3.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(3.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-10 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .rounded{
@@ -946,10 +944,6 @@ video {
   padding: 0.5rem;
 }
 
-.p-3{
-  padding: 0.75rem;
-}
-
 .p-4{
   padding: 1rem;
 }
@@ -1004,13 +998,16 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.py-20{
-  padding-top: 5rem;
+.pb-20{
   padding-bottom: 5rem;
 }
 
 .pb-7{
   padding-bottom: 1.75rem;
+}
+
+.pt-24{
+  padding-top: 6rem;
 }
 
 .pt-4{
@@ -1025,28 +1022,12 @@ video {
   padding-top: 2rem;
 }
 
-.pb-20{
-  padding-bottom: 5rem;
-}
-
-.pt-20{
-  padding-top: 5rem;
-}
-
-.pt-24{
-  padding-top: 6rem;
-}
-
-.pb-24{
-  padding-bottom: 6rem;
-}
-
-.pb-28{
-  padding-bottom: 7rem;
-}
-
 .text-center{
   text-align: center;
+}
+
+.text-justify{
+  text-align: justify;
 }
 
 .text-2xl{
@@ -1087,6 +1068,11 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold{
@@ -1278,10 +1264,6 @@ html{
 @media (min-width: 1024px){
   .lg\:ml-80{
     margin-left: 20rem;
-  }
-
-  .lg\:grid-flow-col{
-    grid-auto-flow: column;
   }
 
   .lg\:grid-cols-12{
