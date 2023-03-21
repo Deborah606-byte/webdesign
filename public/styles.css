@@ -158,9 +158,9 @@ table th, table td{
 
 /* About */
 .about_header{
-    background-image: linear-gradient(rgba(18, 23, 62, 0.5), rgba(15, 19, 35, 0.5)),url('../IMAGES/daniel-mirlea-kPyN4psB90I-unsplash.jpg');
-    background-position: center;
-    height: 80svh;
+    background-image: linear-gradient(rgba(18, 23, 62, 0.5), rgba(15, 19, 35, 0.5)),url('../IMAGES/about_back.jpg');
+    background-position: cover;
+    /* height: 100svh; */
 }
 .inquiry{
     background-color: #144272;
@@ -222,7 +222,7 @@ table th, table td{
      
      /* compare page */
      .compare_heading{
-        background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../IMAGES/artem-kniaz-uBlFp-APuG0-unsplash.jpg');
+        background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../IMAGES/daniel-mirlea-kPyN4psB90I-unsplash.jpg');
         background-size: cover;
      }
      .country_result .heading_city{
