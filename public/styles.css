@@ -242,3 +242,12 @@ table th, table td{
       #loader.show {
         display: block;
       }
+
+      /* rate of living */
+      .rate_heading{
+        background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../IMAGES/maxim-hopman-fiXLQXAhCfk-unsplash.jpg');
+        background-size: cover;
+      }
+      .city_form{
+        margin-top: 14em;
+      }
