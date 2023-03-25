@@ -245,7 +245,7 @@ table th, table td{
 
       /* rate of living */
       .rate_heading{
-        background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../IMAGES/maxim-hopman-fiXLQXAhCfk-unsplash.jpg');
+        background-image: url('../IMAGES/about.svg');
         background-size: cover;
       }
       .city_form{
