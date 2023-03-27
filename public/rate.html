@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 <body>
@@ -70,6 +71,18 @@
             </div>
         </div>
     </header>
+
+  <div class="chart mb-6">
+    <canvas id="myChart" width="800" height="400"></canvas>
+  </div>
+
+  <div class="chart">
+    <canvas id="myChartPop" width="800" height="400"></canvas>
+  </div>
+
+  <div>
+    <canvas id="myChartWealth" width="800" height="400"></canvas>
+  </div>
 
     <section class="testimonials bg-white py-10">
         <!-- testimonials go here -->
@@ -193,6 +206,8 @@
    </footer>
 
    <script type="module" src="../modules/rate.js"></script>
+   <script type="module" src="../modules/population.js"></script>
+   <!-- <script type="module" src="../modules/weath.js"></script> -->
 
 </body>
 </html>
