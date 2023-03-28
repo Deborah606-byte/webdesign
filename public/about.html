@@ -166,16 +166,16 @@
                 <form action="">
                     <div class="amount text-element font-extralight">
                         <p>Enter Amount</p>
-                        <input type="text" value="1" class="block w-full p-2 rounded border-gray-500 mb-2 border-2">
+                        <input type="text" placeholder="1" class="block w-full p-2 rounded border-gray-500 mb-2 border-2">
                     </div>
                     <div class="drop-list flex items-center justify-between">
                         <div class="from text-element font-extralight">
                             <p>From</p>
                             <div class="select-box border-gray-500 border-2 rounded">
                                 <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
-                                <select name="" id="" class="block w-full p-2">
+                                <select class="block w-full p-2">
                                     <option value="USD">USD</option>
-                                    <option value="NPR">NPR</option>
+                                    <option value="NPR">MUR</option>
                                     <option value="INR">1NR</option>
                                     <option value="PKR">PKR</option>
                                     <option value="MAD">MAD</option>
@@ -188,10 +188,10 @@
                         <div class="to text-element font-extralight">
                             <p>To</p>
                             <div class="select-box  border-gray-500 border-2 rounded">
-                                <img src="https://flagsapi.com/NP/flat/64.png" alt="flag">
-                                <select name="" id="" class="block w-full p-2">
+                                <img src="https://flagsapi.com/MU/flat/64.png" alt="flag">
+                                <select class="block w-full p-2">
                                     <option value="USD">USD</option>
-                                    <option value="NPR">NPR</option>
+                                    <option value="NPR">MUR</option>
                                     <option value="INR">1NR</option>
                                     <option value="PKR">PKR</option>
                                     <option value="MAD">MAD</option>
@@ -200,7 +200,7 @@
                         </div>
                     </div>
 
-                    <div class="exchange-rate text-element font-bold">1 USD = 118.16 NPR</div>
+                    <div class="exchange-rate text-element font-bold py-5 text-center">1 USD = 46.00 MUR</div>
                     <input type="submit" value="Get Exchage Rate" class="block border-2 bg-black w-40 h-10 text-white my-5 mx-32 rounded-full">
                 </form>
             </div>
@@ -304,5 +304,7 @@
 
    </footer>
 
+   <scipt type="module" src="../modules/country.js"></scipt>
+   <scipt type="module" src="../modules/about.js"></scipt>
 </body>
 </html>
