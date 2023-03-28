@@ -181,6 +181,20 @@ table th, table td{
     width: 15em;
     height: 15em;
 }
+.drop-list .select-box{
+    display: flex;
+    height: 3em;
+    width: 155px;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+} 
+.select-box select{
+    width: auto;
+}
+.select-box img{
+    max-width: 2.5em;
+}
 
 
 
