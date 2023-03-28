@@ -55,33 +55,27 @@
             </nav>
         </div>
 
-        <div class="py-24 mx-auto flex flex-col items-center gap-y-5 city_form">
-            <form id="search_form" class="search-box flex justify-center items-center mx-auto">
-                <div class="bg-white rounded-3xl px-5 w-[350px] border-2 border-slate-700 hover:border-slate-900 hover:border-[3px] search-wrapper">                 
-                    <input id="city-info" type="text" placeholder="Search for Capital Cities" class="bg-white placeholder:text-slate-400 text-sm outline-none px-7 py-3">
-                </div>  
-                <button type="submit" id="search-btn" class="border-2 border-white w-20 hover:text-black hover:bg-white text-white h-10 rounded-r-3xl ml-2">Search</button>  
-            </form>
-            <div class="mt-5 font-thin text-center text-white md:text-lg">
-                <span>We provide every country's capital rate of living over the years</span>
-                <br>
-                <span>Our website aim to help you to track how fast or slow a country's capitals living has increased over the years</span>
-                <br>
-                <span>Users have the ability to filter data by year, country, or specific expense categories</span>
-            </div>
+        <div class="py-24 font-thin text-center text-white md:text-lg">
+            <span>We provide every country's capital rate of living over the years</span>
+            <br>
+            <span>Our website aim to help you to track how fast or slow a country's capitals living has increased over the years</span>
+            <br>
+            <span>Users have the ability to filter data by year, country, or specific expense categories</span>
         </div>
     </header>
 
-  <div class="chart mb-6">
-    <canvas id="myChart" width="800" height="400"></canvas>
-  </div>
-
-  <div class="chart">
-    <canvas id="myChartPop" width="800" height="400"></canvas>
-  </div>
-
-  <div>
-    <canvas id="myChartWealth" width="800" height="400"></canvas>
+  <div class="py-10">
+    <div class="chart mb-6">
+        <canvas id="myChart" width="300" height="100"></canvas>
+      </div>
+    
+      <div class="chart">
+        <canvas id="myChartPop" width="300" height="100"></canvas>
+      </div>
+    
+      <div>
+        <canvas id="myChartWealth" width="300" height="100"></canvas>
+      </div>
   </div>
 
     <section class="testimonials bg-white py-10">
@@ -207,7 +201,7 @@
 
    <script type="module" src="../modules/rate.js"></script>
    <script type="module" src="../modules/population.js"></script>
-   <!-- <script type="module" src="../modules/weath.js"></script> -->
+   <script type="module" src="../modules/weath.js"></script>
 
 </body>
 </html>
