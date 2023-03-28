@@ -195,6 +195,17 @@ table th, table td{
 .select-box img{
     max-width: 2.5em;
 }
+.select-box select::-webkit-scrollbar{
+    background: #fff;
+}
+.select-box select::-webkit-scrollbar-track{
+    width: 8px;
+}
+.select-box select::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #fff;
+}
 
 
 

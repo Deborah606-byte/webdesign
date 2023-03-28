@@ -159,4 +159,3 @@ let country_code = {
     "ZMK" : "ZM",
     "ZWD" : "ZW"
 }
-console.log(country_code);

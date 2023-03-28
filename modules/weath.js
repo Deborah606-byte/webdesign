@@ -34,7 +34,7 @@ const ctx = document.getElementById('myChartPop');
 
 async function getData(){
     const xs = [];
-	const ys = [];
+  	const ys = [];
 
 	const response = await fetch('../data/WEALTH_27032023104704851.csv');
    
