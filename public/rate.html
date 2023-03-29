@@ -64,19 +64,34 @@
         </div>
     </header>
 
-  <div class="py-10">
-    <div class="chart mb-6">
-        <canvas id="myChart" width="300" height="100"></canvas>
-      </div>
-    
-      <div class="chart">
-        <canvas id="myChartPop" width="300" height="100"></canvas>
-      </div>
-    
-      <div>
-        <canvas id="myChartWealth" width="300" height="100"></canvas>
-      </div>
-  </div>
+    <section class="py-10">
+        <div class="grid grid-flow-col">
+            <div class="chart mb-6 cols-span-11">
+                <canvas id="myChart" width="300" height="100"></canvas>
+            </div>
+
+            <div class="col-span-1 py-10">
+                <form action="">
+                    <label for="filter" class="block text-heading font-bold">Filter</label>
+                    <select name="chart" id="chart" class="block border-2 border-gray-500 w-full rounded">
+                      <option value="Select">Select</option>
+                      <option value="saab">1800's</option>
+                      <option value="opel">1900's</option>
+                      <option value="audi">2000's</option>
+                    </select>
+                    <input type="submit" value="Submit" class="block border-2 bg-white w-40 h-10 text-black my-5  rounded-full">
+                </form>
+            </div>
+        </div>
+        
+        <div class="chart">
+            <canvas id="myChartPop" width="300" height="100"></canvas>
+        </div>
+        
+        <div>
+            <canvas id="myChartWealth" width="300" height="100"></canvas>
+        </div>
+    </section>
 
     <section class="testimonials bg-white py-10">
         <!-- testimonials go here -->
@@ -100,7 +115,7 @@
                 </div>
                 </div>
 
-                <div class="flex justify-items-start testify">
+                <div class="flex justify-items-start testify border-l-4 border-primary">
                 <img src="../IMAGES/professor.webp" alt="Ernest" class="rounded-full w-16 h-16 ml-3 mt-2">
                 <div class="ml-14 mt-4">
                     <span>Mary Matthews</span> <br>
