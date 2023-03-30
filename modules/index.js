@@ -1,6 +1,7 @@
 // let searchBtn = document.getElementById("search-btn");
 let searchForm = document.getElementById("search_form");
 let countryInp = document.getElementById("country-info");
+let loading = document.getElementById("loader");
 
 const loadMap = (lat, long, country)=>{
 	var map = L.map('map').setView([lat, long], 5);
@@ -19,6 +20,8 @@ searchForm.addEventListener("submit", (e) =>{
 	e.preventDefault();
 
 	let countryName = countryInp.value;
+	loader.classList.remove("hidden");
+	loader.innerHTML = "Loading...";
 	
 	let finalUrl = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
 	console.log(finalUrl);
@@ -37,6 +40,7 @@ searchForm.addEventListener("submit", (e) =>{
 		console.log(data);
 
 		result.classList.remove("hidden");
+		loader.classList.add("hidden");
 		result.innerHTML =`
 
 			<h2 class="text-heading text-3xl font-bold">${data[0].name.common}</h2>

@@ -1,20 +1,81 @@
 chartIt(); 
 const filterChart = document.getElementById('filterChart');
 const chartForm = document.getElementById('filterForm');
+
 chartForm.addEventListener("submit", handleFilter);
+
+let myChart;
+
 async function handleFilter(e){
+    myChart.destroy();
+
     e.preventDefault();
-    let selectedFilter = filterChart.value;
+    let selectedFilter = Number(filterChart.value);
+
+    if(selectedFilter === "") return alert("Select a value to filter");
+
     const data = await getData();
-    const filteredData = data.ys.filter((value) => Number(value)< selectedFilter);
-    console.log(filteredData);
+
+    let filteredDataY = [];
+
+    data.ys.filter((value) => {
+        if(selectedFilter === 30){
+            if(Number(value) < 30){
+                filteredDataY.push(value);
+            }
+        }else if(selectedFilter === 69){
+            if(Number(value) < 69 && Number(value) >= 30){
+                filteredDataY.push(value);
+            }
+        }else if(selectedFilter === 70){
+            if(Number(value) >= 70){
+                filteredDataY.push(value);
+            }
+        }
+
+    });
+
+    chartIt();
+
+    async function chartIt(){
+        const data = await getData();
+        const ctx = document.getElementById('myChartPop');
+        // console.log(data.ys);
+         myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+              labels: data.xs,
+              datasets: [{
+                label: 'National population distribution (Urban Regions)',
+                data: filteredDataY,
+                    fill: false,
+                    backgroundColor: 'rgba(255, 90, 132, 0.2)',
+                    borderColor: 'rgba(255, 90, 132, 1)',
+                borderWidth: 1
+              }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        ticks: {
+                            // Include a degree sign in the ticks
+                            callback: function(value, index, ticks) {
+                                return value + '%';
+                            }
+                        }
+                    }
+                }
+            }
+          });
+        }
 }
+
 
 async function chartIt(){
 const data = await getData();
 const ctx = document.getElementById('myChartPop');
 // console.log(data.ys);
-  new Chart(ctx, {
+  myChart = new Chart(ctx, {
     type: 'bar',
     data: {
       labels: data.xs,

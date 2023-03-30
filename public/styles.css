@@ -260,13 +260,6 @@ table th, table td{
         text-decoration: underline;
         text-align: left;
      }
-     #loader {
-        display: none;
-      }
-      
-      #loader.show {
-        display: block;
-      }
 
       /* rate of living */
       .rate_heading{

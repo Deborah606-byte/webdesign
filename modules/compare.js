@@ -1,6 +1,8 @@
     let inputOne = document.getElementById("search_one");
     let inputTwo = document.getElementById("search_two");
     let form = document.getElementById("search_form");
+    let loading = document.getElementById("loader");
+
 
     function showList(list){
         return list?.map(({Cost, Value}) =>
@@ -14,6 +16,11 @@
     form.addEventListener("submit", async (e) => {
         // prevent form from submitting and refreshing page on submission
         e.preventDefault();
+
+        result.classList.add("hidden");
+
+        loader.classList.remove("hidden");
+	    loader.innerHTML = "Loading...";
 
         //extract city and country info from input fields
         const inputOneCountry = inputOne.value.toLowerCase().split("/")[1];
@@ -33,6 +40,7 @@
         const cityTwo = {...Object.values(cityTwoData)};
 
         result.classList.remove("hidden");
+        loader.classList.add("hidden");
         result.innerHTML =`
             <div class="main">
                 <div class="country_search_left">
