@@ -2,7 +2,7 @@ chartIt();
 
 async function chartIt(){
 const data = await getData();
-const ctx = document.getElementById('myChartPop');
+const ctx = document.getElementById('myChartWealth');
 
   new Chart(ctx, {
     type: 'bar',
@@ -11,7 +11,7 @@ const ctx = document.getElementById('myChartPop');
       datasets: [{
         label: 'Wealth Distribution',
         data: data.ys,
-		fill: false,
+		// fill: false,
 		backgroundColor: 'rgba(255, 90, 132, 0.2)',
 		borderColor: 'rgba(255, 90, 132, 1)',
         borderWidth: 1

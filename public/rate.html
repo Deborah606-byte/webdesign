@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./styles.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 <body>
@@ -65,7 +64,7 @@
     </header>
 
     <section class="py-10">
-        <div class="grid grid-flow-col">
+        <!-- <div class="grid grid-flow-col">
             <div class="chart mb-6 cols-span-11">
                 <canvas id="myChart" width="300" height="100"></canvas>
             </div>
@@ -73,19 +72,34 @@
             <div class="col-span-1 py-10">
                 <form action="">
                     <label for="filter" class="block text-heading font-bold">Filter</label>
-                    <select name="chart" id="chart" class="block border-2 border-gray-500 w-full rounded">
+                    <select name="chart" id="chart" class="block border-2 border-gray-500 w-full rounded" [(ngModel)] = "years">
                       <option value="Select">Select</option>
                       <option value="saab">1800's</option>
                       <option value="opel">1900's</option>
                       <option value="audi">2000's</option>
                     </select>
-                    <input type="submit" value="Submit" class="block border-2 bg-white w-40 h-10 text-black my-5  rounded-full">
+                    <input [(ngModel)] = "filterLimit" placeholder="Filter Limit">
+                    <button type="submit" class="block border-2 bg-white w-40 h-10 text-black my-5  rounded-full" class="button" (click)="applyFiler(filerLimit )">Apply Filter</button>
                 </form>
             </div>
-        </div>
-        
-        <div class="chart">
-            <canvas id="myChartPop" width="300" height="100"></canvas>
+        </div> -->
+        <div class="grid grid-flow-col">
+            <div class="chart col-span-11">
+                <canvas id="myChartPop" width="300" height="100"></canvas>
+            </div>
+            <div class="col-span-1 py-10">
+                <form action="" id="filterForm">
+                    <label for="filter" class="block text-heading font-bold">Filter</label>
+                    <select name="chart" id="filterChart" class="block border-2 border-gray-500 w-full rounded" [(ngModel)] = "years">
+                    <option value="">Select by Population %</option>
+                    <option value="30">less than 30%</option>
+                    <option value="69">between 30%-69%</option>
+                    <option value="70">greater than 70%</option>
+                    </select>
+                    <!-- <input [(ngModel)] = "filterLimit" placeholder="Filter Limit"> -->
+                    <button type="submit" class="block border-2 bg-white w-40 h-10 text-black my-5  rounded-full" class="button" (click)="applyFiler(filerLimit )">Apply Filter</button>
+                </form>
+            </div>
         </div>
         
         <div>
@@ -221,10 +235,9 @@
 
 
    </footer>
-
-   <script type="module" src="../modules/rate.js"></script>
-   <script type="module" src="../modules/population.js"></script>
-   <script type="module" src="../modules/weath.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="../modules/population.js"></script>
+   <!-- <script type="module" src="../modules/weath.js"></script> -->
 
 </body>
 </html>

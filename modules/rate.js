@@ -6,7 +6,7 @@ const data = await getData();
 const ctx = document.getElementById('myChart');
 
   new Chart(ctx, {
-    type: 'line',
+    type: 'bar',
     data: {
       labels: data.xs,
       datasets: [{
@@ -32,6 +32,13 @@ const ctx = document.getElementById('myChart');
     }
   });
 }
+
+// function filterChart(){
+//   const filterResult = Chart.data.datasets[0].data.filter(value => value < 1990);
+//   console.log(filterResult);
+// }
+// filterChart();
+
 
 
 async function getData(){
