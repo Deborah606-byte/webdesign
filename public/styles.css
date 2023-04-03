@@ -274,7 +274,7 @@ table th, table td{
         background: #2C74B3;
     }
     .chartBox {
-        width: 700px;
+        width: 900px;
         padding: 20px;
         border-radius: 20px;
         border: solid 3px rgba(54, 162, 235, 1);
@@ -309,23 +309,6 @@ table th, table td{
         }
 
         /*footer responsiveness*/
-        .end h4{
-            text-align: center;
-        }
-
-        .end ul{
-            display: flex;
-            flex-direction: column;
-        }
-        .end ul li{
-            margin-bottom: 2em;
-        }
-        .end .about_footer{
-            text-align: center;
-        }
-        .end .currency{
-            margin-top: 2em;
-        }
 
         /*rate responsiveness*/
         .chartBox{

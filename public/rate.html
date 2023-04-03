@@ -83,10 +83,10 @@
                 <form action="" id="filterForm">
                     <label for="filter" class="block text-heading font-bold">Filter</label>
                     <select name="chart" id="filterChart" class="block border-2 border-gray-500 w-full rounded-full" [(ngModel)] = "years">
-                    <option value="">Select by Population %</option>
-                    <option value="30">less than 30%</option>
-                    <option value="69">between 30%-69%</option>
-                    <option value="70">greater than 69%</option>
+                    <option value="">Select</option>
+                    <option value="10">less than 10</option>
+                    <option value="20">between 10 and 20</option>
+                    <option value="21">greater than 21</option>
                     </select>
                     <!-- <input [(ngModel)] = "filterLimit" placeholder="Filter Limit"> -->
                     <button type="submit" class="block border-2 bg-white w-40 h-10 text-black my-5  rounded-full" class="button" (click)="applyFiler(filerLimit )">Apply Filter</button>
