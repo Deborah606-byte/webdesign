@@ -14,13 +14,13 @@
 </head>
 <body class="landing_page">
     <header class="bg-cover p-2 landing_header">
-        <nav class="text-white">
+        <nav class="text-white fixed top-0 left-0 w-full">
         <div class="flex justify-between mx-2">
-                <h1>
-                 <a href="/public/index.html" class="ml-2 text-4xl font-extrabold name text-white">DAPS Search</a>      
+                <h1 class="ml-2 text-4xl font-extrabold name">
+                 <a href="/public/index.html">DAPS Search</a>      
                 </h1>
 
-                <ul class="lg:flex items-center justify-between space-x-8 uppercase font-bold hidden md:block" id="menu">
+                <ul class="md:flex items-center space-x-8 uppercase font-bold hidden main_menu" id="menu">
                     <li>
                         <a href="./home.html" class="hover:text-primary flex justify-end">
                             <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -58,16 +58,18 @@
                 <div class="pt-3 cursor-pointer md:hidden" id="burger">
                     <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                      </svg>                        
+                    </svg>                                           
                 </div>
-            </nav>
-        </div>
+
+                <!-- <div class="closeMenu hidden"><i class="fa fa-times"></i></div> -->
+            </div>
+        </nav>
     </header>
     
     <!-- hero section -->
     <div class="hero">
         <div class="content">
-            <div class="info flex flex-col gap-y-5">
+            <div class="info md:flex flex-col gap-y-5 hidden">
                 <h1 class="text-5xl text-white font-extrabold mb-4">Discover the World</h1>
                 <span class="text-1xl text-white">Explore the Beauty and Diversity of Different Countries. </span>
                 <span class="text-1xl text-white">This website strive to educate and excite visitors about various <br>
@@ -77,9 +79,7 @@
                     Explore
                 </a>
             </div>
-            <!-- <div class="image">
-                <img src="../IMAGES/africa1.png" alt="Africa">
-            </div> -->
+           
             <div class="travellers space-x-10">
                      <img src="../IMAGES/travel_woman.png" class="land_travellers rounded-3xl">
               

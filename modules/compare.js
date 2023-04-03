@@ -1,9 +1,9 @@
     let inputOne = document.getElementById("search_one");
     let inputTwo = document.getElementById("search_two");
     let form = document.getElementById("search_form");
-    let loading = document.getElementById("loader");
+    let loading = document.getElementById("loader"); //
 
-
+    //for listing the cost and values in tarbular format
     function showList(list){
         return list?.map(({Cost, Value}) =>
             `<tr>
@@ -17,6 +17,7 @@
         // prevent form from submitting and refreshing page on submission
         e.preventDefault();
 
+        //to hide the div and display it when searched
         result.classList.add("hidden");
 
         loader.classList.remove("hidden");

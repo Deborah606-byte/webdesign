@@ -16,7 +16,8 @@ html{
 .intro{
     font-style: italic;
 }
-.country{
+.country
+{
     background-color: #2C74B3;
 }
 
@@ -96,7 +97,7 @@ hr{
 }
 .country_result{
     /* height: 100vh; */
-    background-color: white;
+    background-color: #2C74B3;
 }
 .flag-img{
     width: 300px;
@@ -127,7 +128,6 @@ hr{
 }
 .country_result span{
     color: #0A2647;
-    font-weight: lighter;
 }
 .country_result h3{
     color: #144272;
@@ -269,9 +269,6 @@ table th, table td{
       .city_form{
         margin-top: 14em;
       }
-      .chart{
-        margin-bottom: 5em;
-      }
 
     .chart-data{
         background: #2C74B3;
@@ -284,9 +281,57 @@ table th, table td{
         background: white;
       }
 
-    @media screen and (min-width: 768px) {
-        .hero .content{
-            /* display: flex;
-            flex-direction: row; */
+     @media (max-width: 800px) {
+        /* landing page  responsiveness*/
+        .land_travellers{
+            display:none;
         }
-    }
+        /*search result responsiveness*/
+        .main{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .country_search_left,
+        .country_search_right{
+            width: 100%;
+        }
+
+        /*testimonials responsiveness*/
+        .testify{
+            display: flex;
+            flex-direction: row;
+            width: 25em;
+        }
+        .testimonials{
+            margin-left: -5em;
+            align-items: center;
+        }
+
+        /*footer responsiveness*/
+        .end h4{
+            text-align: center;
+        }
+
+        .end ul{
+            display: flex;
+            flex-direction: column;
+        }
+        .end ul li{
+            margin-bottom: 2em;
+        }
+        .end .about_footer{
+            text-align: center;
+        }
+        .end .currency{
+            margin-top: 2em;
+        }
+
+        /*rate responsiveness*/
+        .chartBox{
+            width: 400px;
+        }
+        .chartFilter{
+            
+        }
+    }   

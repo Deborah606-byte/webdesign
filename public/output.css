@@ -549,6 +549,18 @@ video {
   }
 }
 
+.fixed{
+  position: fixed;
+}
+
+.left-0{
+  left: 0px;
+}
+
+.top-0{
+  top: 0px;
+}
+
 .col-span-1{
   grid-column: span 1 / span 1;
 }
@@ -684,6 +696,14 @@ video {
 
 .mt-7{
   margin-top: 1.75rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
 }
 
 .block{
@@ -921,6 +941,11 @@ video {
   background-color: rgb(0 0 0 / 0.7);
 }
 
+.bg-element{
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 38 71 / var(--tw-bg-opacity));
+}
+
 .bg-gray-300{
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
@@ -1018,6 +1043,10 @@ video {
   padding-top: 6rem;
 }
 
+.pt-3{
+  padding-top: 0.75rem;
+}
+
 .pt-4{
   padding-top: 1rem;
 }
@@ -1028,14 +1057,6 @@ video {
 
 .pt-8{
   padding-top: 2rem;
-}
-
-.pt-6{
-  padding-top: 1.5rem;
-}
-
-.pt-3{
-  padding-top: 0.75rem;
 }
 
 .text-center{
@@ -1284,6 +1305,10 @@ html{
     margin-right: auto;
   }
 
+  .sm\:mt-5{
+    margin-top: 1.25rem;
+  }
+
   .sm\:h-48{
     height: 12rem;
   }
@@ -1294,8 +1319,16 @@ html{
 }
 
 @media (min-width: 768px){
-  .md\:block{
-    display: block;
+  .md\:mt-10{
+    margin-top: 2.5rem;
+  }
+
+  .md\:mt-5{
+    margin-top: 1.25rem;
+  }
+
+  .md\:flex{
+    display: flex;
   }
 
   .md\:hidden{
@@ -1313,12 +1346,48 @@ html{
 }
 
 @media (min-width: 1024px){
+  .lg\:col-span-3{
+    grid-column: span 3 / span 3;
+  }
+
+  .lg\:col-span-7{
+    grid-column: span 7 / span 7;
+  }
+
   .lg\:ml-80{
     margin-left: 20rem;
   }
 
+  .lg\:mt-10{
+    margin-top: 2.5rem;
+  }
+
+  .lg\:ml-24{
+    margin-left: 6rem;
+  }
+
+  .lg\:mt-4{
+    margin-top: 1rem;
+  }
+
+  .lg\:ml-12{
+    margin-left: 3rem;
+  }
+
+  .lg\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+
+  .lg\:mt-5{
+    margin-top: 1.25rem;
+  }
+
   .lg\:flex{
     display: flex;
+  }
+
+  .lg\:grid-flow-col{
+    grid-auto-flow: column;
   }
 
   .lg\:grid-cols-12{
@@ -1341,8 +1410,14 @@ html{
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
-  .lg\:flex-col{
-    flex-direction: column;
+  .lg\:py-6{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .lg\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .lg\:pl-24{
@@ -1359,5 +1434,10 @@ html{
 
   .lg\:pr-52{
     padding-right: 13rem;
+  }
+
+  .lg\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
