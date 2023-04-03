@@ -422,16 +422,22 @@
             
     </section>
 
+    <!-- Footer goes here -->
    <footer class="end pt-8 rounded-t-3xl">
-        <h4 class="text-3xl font-extrabold lg:ml-80 text-white">Who Are We?</h4>
-        <div class="grid lg:grid-cols-12 grid-cols-1 gap-10 mt-5 place-items-center">
-            <div class="col-span-3">
-                <h2 class="text-6xl font-semibold lg:ml-12 text-white">DAPS Search</h2>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mt-5">
+            <div class="col-span-1 md:col-span-4 lg:col-span-3 px-4 md:place-self-end mx-auto relative -top-5">
+                <h2 class="flex gap-x-4 md:flex-col text-5xl md:text-6xl font-semibold text-white text-center md:text-start md:gap-x-0">
+                    <span>DAPS</span>
+                    <span>Search</span>
+                </h2>
             </div>
-            <div class="col-span-7 text-white">
-                <p class="lg:py-6">DAPS Search is a website for searching information about a country. 
+
+            <div class="p-4 text-white md:col-span-8 lg:col-span-9 flex flex-col items-center md:items-start gap-y-2">
+                <h4 class="text-3xl font-extrabold text-white">Who Are We?</h4>
+
+                <p class="md:py-3 text-center md:text-start">DAPS Search is a website for searching information about a country. 
                     With just few clicks you can easily locate your next location.</p>
-                    <ul class="flex items-center justify-between space-x-4">
+                    <ul class="mt-4 flex flex-col items-center gap-y-5 md:flex-row md:gap-y-0 justify-between space-x-4">
                         <li class="currency">
                             <a href="./about.html#convertor" class="hover:text-primary">
                                 <span>CURRENCY CONVERTOR</span>
@@ -455,30 +461,27 @@
         </div> 
 
         <hr>
-        <div class="grid lg:grid-cols-2 gap-x-10 text-white">
-            <div>
-                <ul class="flex items-center justify-around">
-                    <li>
-                        <a href="#" class="hover:text-primary px-6  flex justify-end">
-                            <span>English</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:text-primary">
-                            <span>Privacy Policy</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:text-primary">
-                            <span>Phone</span>
-                        </a>
-                    </li>
-                </ul>  
-            </div>
 
-            <div class="flex justify-end mr-10 icons">
-                <!-- <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-youtube"></i> -->             
+        <div class="flex flex-col items-center gap-y-5 text-white md:flex-row md:gap-y-0 md:space-x-5 md:justify-between px-8">
+            <ul class="flex flex-col md:flex-row gap-y-4 md:gap-y-0 items-center md:space-x-10">
+                <li>
+                    <a href="#" class="hover:text-primary">
+                        English
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-primary">
+                        Privacy Policy
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-primary">
+                        Phone
+                    </a>
+                </li>
+            </ul>  
+
+            <div class="flex items-center icons space-x-5">         
                 <a href="">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
