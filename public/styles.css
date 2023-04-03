@@ -97,7 +97,7 @@ hr{
 }
 .country_result{
     /* height: 100vh; */
-    background-color: #2C74B3;
+    background-color: rgba(245, 245, 245, 0.502);
 }
 .flag-img{
     width: 300px;
