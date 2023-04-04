@@ -21,10 +21,19 @@
 </head>
 <body>
     <header class="bg-cover p-2 about_header">
-        <div class="flex justify-between mx-2">
-            <a href="/public/index.html" class="ml-2 text-4xl font-extrabold name text-white">DAPS Search</a>
-            <nav class="text-white uppercase font-bold">
-                <ul class="flex items-center justify-between space-x-8">
+        <nav class="text-white fixed top-0 left-0 w-full bg-element z-50">
+            <div class="flex justify-between items-center">
+                <h1 class="ml-4 text-4xl font-extrabold name">
+                 <a href="/public/index.html">DAPS Search</a>      
+                </h1>
+
+                <div class="pt-3 pr-3 cursor-pointer md:hidden" id="burger">
+                    <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>                                           
+                </div>
+
+                <ul class="hidden uppercase font-bold  flex-col items-start space-y-7 absolute top-12 bg-element/80 w-full px-2 py-4 md:flex md:w-auto md:flex-row md:items-center md:space-x-8 md:space-y-0 md:relative md:top-0 md:bg-transparent md:py-0" id="menu">
                     <li>
                         <a href="./home.html" class="hover:text-primary flex justify-end">
                             <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -45,12 +54,12 @@
                         <a href="./rate.html" class="hover:text-primary flex justify-end">
                             <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
-                              </svg>
+                              </svg>                              
                             <span class="ml-1">Data</span>
                         </a>
                     </li>
                     <li>
-                        <a href="./about.html" class="text-primary flex justify-end">
+                        <a href="#" class="text-primary flex justify-end">
                             <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
                               </svg>                              
@@ -58,8 +67,11 @@
                         </a>
                     </li>
                 </ul>
+
+                <!-- <div class="closeMenu hidden"><i class="fa fa-times"></i></div> -->
+                </div>
             </nav>
-        </div>
+
 
         <div class="text-center py-24">
             <div class="flex flex-col items-center gap-y-10">
@@ -85,21 +97,21 @@
         <div class="p-2 About">
             <h4 class="text-3xl font-bold text-heading text-center">About Company</h4>
             <h4 class="text-xs mb-2 font-bold text-heading text-center">Who Are We?</h4>
-            <div class="flex justify-center mt-10">
-                <div class="mr-10">
-                    <p class="text-justify mb-2">
+            <div class="flex justify-center mt-7 gap-10 about-company">
+                <div>
+                    <p class="mb-2">
                          - DAPS Search is your go-to website for finding information 
-                        <br> about countries around the world. </p>
-                    <p class="text-justify mb-2">
+                        <br> about countries around the world.
+                        <br>
                         -  With just a few clicks, one can access a wealth  of information
                         <br> about each country's standard of living, insurance policies,
                         <br> and the cost of living in its capital city.
                         <br> We have included user reviews or ratings of different countries  
                         <br> or cities on the website.
+                        <br>
+                        - This provides users with valuable insights and perspectives 
+                        <br>from people who have lived or visited those places.
                     </p>
-                    <p class="text-justify mb-2"> 
-                        - This provides users with valuable insights and perspectives from 
-                        <br> people who have lived or visited those places.</p>
                 </div>
                 <div>
                     <img src="../IMAGES/about1.png" alt="image" class="about_image rounded-3xl">
@@ -111,21 +123,20 @@
 
         <div class="developer pt-5 pb-20" id="developer">
             <h4 class="text-center text-3xl font-bold text-heading">About Developer</h4>
-            <div class="flex justify-center mt-10">
+            <div class="flex justify-center mt-7 gap-10 about-developer">
                 <div>
-                    <img src="../IMAGES/Debs.jpg" alt="image" class="about_image rounded-3xl mr-10">
+                    <img src="../IMAGES/Debs.jpg" alt="image" class="about_image rounded-3xl">
                 </div>
                 <div class="">
-                    <p class="text-justify mb-2">
+                    <p class="mb-2">
                         - Deborah is a driven and talented student who is committed to
-                        <br> using her skills to make a positive impact in the world </p>
-                   <p class="text-justify mb-2">
+                        <br> using her skills to make a positive impact in the world
+                        <br>
                        -  Throughout her studies at the African Leadership College, she
                        <br> has excelled in her computing courses, gaining a strong 
                        <br> foundation in programming languages such as HTML, CSS, 
                        <br> and JavaScript.
-                   </p>
-                   <p class="text-justify mb-2"> 
+                       <br>
                        - Deborah is an excellent communicator and collaborator. She 
                       <br> has worked on several group projects during her studies, 
                       <br> demonstrating her ability to work effectively with others and
@@ -137,8 +148,8 @@
 
     <section class="inquiry py-3">
         <!-- inquiry form goes here -->
-        <div class="enquiry grid lg:grid-cols-2">
-            <div class="max-w-md bg-white px-5 py-5 rounded shadow-2xl m-5" id="send-enquiry">
+        <div class="enquiry flex justify-around gap-5">
+            <div class="max-w-md bg-white px-5 py-5 rounded shadow-2xl" id="send-enquiry">
                 <div class="text-center mb-8">
                     <h4 class="font-bold text-2xl text-heading">SEND ENQUIRY</h4>
                 </div>
@@ -154,17 +165,17 @@
                     <textarea rows="4" cols="50" name="comment" form="usrform" class="block w-full rounded border-gray-500 mb-3 border-2" placeholder="Let's hear you"></textarea>
                     <input type="checkbox" id="check" name="checkbox" value="tick" class="mr-1">
                     <label for="check" class="text-element font-bold">I consent to get news and service updates from DAPS Search</label>
-                    <input type="submit" value="Submit" class="block border-2 bg-black w-40 h-10 text-white my-5 mx-32 rounded-full">
+                    <input type="submit" value="Submit" class="block border-2 bg-black w-40 h-10 text-white my-5 rounded-full hover:text-element">
                 </form>
             </div>
 
             
-            <div class="max-w-md bg-white px-5 py-5 rounded shadow-2xl m-5" id="convertor">
+            <div class="max-w-md bg-white px-5 py-5 rounded shadow-2xl" id="convertor">
                 <div class="text-center mb-8">
                     <h4 class="font-bold text-2xl text-heading">CURRENCY CONVERTOR</h4>
                 </div>
 
-                <form action="">
+                <form action="" class="col-span-6">
                     <div class="amount text-element font-extralight">
                         <p>Enter Amount</p>
                         <input type="text" placeholder="1" class="block w-full p-2 rounded border-gray-500 mb-2 border-2">
@@ -193,7 +204,7 @@
                     </div>
 
                     <div class="exchange-rate text-element font-bold py-5 text-center">Get Exchange Rate</div>
-                    <button type="submit" class="block border-2 bg-black w-40 h-10 text-white my-5 mx-32 rounded-full">Get Exchage Rate</button>
+                    <button type="submit" class="block border-2 bg-black w-40 h-10 text-white my-5 rounded-full">Get Exchage Rate</button>
                 </form>
             </div>
            
@@ -202,111 +213,116 @@
 
     <section class="py-10">
         <h4 class="text-center text-3xl font-bold text-heading">Our Services</h4>
-        <div class="flex justify-center mt-10 space-x-10 services">
-            <div class="card hover:shadow-lg">
-                <img src="../IMAGES/rezvani-gXvsOquzSqE-unsplash.jpg" alt="services" class="w-full h-32 sm:h-48 object-cover">
-                <div class="information">
-                    <span>Basic information about country</span>
-                </div>
-            </div>
-            <div class="card hover:shadow-lg">
-                <img src="../IMAGES/luke-chesser-JKUTrJ4vK00-unsplash.jpg" alt="services" class="w-full h-32 sm:h-48 object-cover">
+        <div class="flex justify-center mt-10 services gap-10">
+           
+            <div class="card">
+                <img src="../IMAGES/luke-chesser-JKUTrJ4vK00-unsplash.jpg" alt="services" class=" sm:h-48 object-cover opacity-75">
                 <div class="information">
                     <span>Cost of living in country's capital</span>
                 </div>
             </div>
-            <div class="card hover:shadow-lg">
-                <img src="../IMAGES/deborah-cortelazzi-gREquCUXQLI-unsplash.jpg" alt="services" class="w-full h-32 sm:h-48 object-cover">
+            <div class="card">
+                <img src="../IMAGES/r-architecture-2gDwlIim3Uw-unsplash.jpg" alt="services" class="sm:h-48 object-cover opacity-75">
                 <div class="information">
-                    <span>Average costs for each type of accommodation</span>
+                    <span>Average costs for each type <br> of accommodation</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMAGES/albert-stoynov-suuJUYSn9no-unsplash.jpg" alt="services" class="sm:h-48 object-cover opacity-75">
+                <div class="information">
+                    <span>Basic information about country</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="end pt-8 rounded-t-3xl">
-        <h4 class="text-3xl font-extrabold lg:ml-80 text-white">Who Are We?</h4>
-        <div class="grid lg:grid-cols-12 gap-10 mt-5">
-            <div class="col-span-3">
-                <h2 class="text-6xl font-semibold ml-12 text-white">DAPS Search</h2>
-            </div>
-            <div class="col-span-7 text-white">
-                <p class="py-6">DAPS Search is a website for searching information about a country. 
-                    With just few clicks you can easily locate your next location.</p>
-                    <ul class="flex items-center justify-between space-x-4">
-                        <li>
-                            <a href="#convertor" class="hover:text-primary">
-                                <span>CURRENCY CONVERTOR</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#developer" class="hover:text-primary">
-                                <span>ABOUT DEVELOPER</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#send-enquiry" class="hover:text-primary px-4  flex justify-end">
-                                <span class="mr-2">SEND ENQUIRY</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                                  </svg>
-                            </a>
-                        </li>
-                    </ul>                
-            </div>
-        </div> 
+            <!-- Footer goes here -->
+        <footer class="end pt-8 rounded-t-3xl">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mt-5">
+                <div class="col-span-1 md:col-span-4 lg:col-span-3 px-4 md:place-self-end mx-auto relative -top-5">
+                    <h2 class="flex gap-x-4 md:flex-col text-5xl md:text-6xl font-semibold text-white text-center md:text-start md:gap-x-0">
+                        <span>DAPS</span>
+                        <span>Search</span>
+                    </h2>
+                </div>
 
-        <hr>
-        <div class="grid lg:grid-cols-2 gap-x-10 text-white">
-            <div>
-                <ul class="flex items-center justify-around">
+                <div class="p-4 text-white md:col-span-8 lg:col-span-9 flex flex-col items-center md:items-start gap-y-2">
+                    <h4 class="text-3xl font-extrabold text-white">Who Are We?</h4>
+
+                    <p class="md:py-3 text-center md:text-start">DAPS Search is a website for searching information about a country. 
+                        With just few clicks you can easily <br>locate your next location.</p>
+                        <ul class="mt-4 flex flex-col items-center gap-y-5 md:flex-row md:gap-y-0 justify-between md:space-x-14">
+                            <li class="currency">
+                                <a href="./about.html#convertor" class="hover:text-primary">
+                                    <span>CURRENCY CONVERTOR</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./about.html#developer" class="hover:text-primary">
+                                    <span>ABOUT DEVELOPER</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./about.html#send-enquiry" class="hover:text-primary px-4  flex justify-end">
+                                    <span class="mr-2">SEND ENQUIRY</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>                
+                </div>
+            </div> 
+
+            <hr>
+
+            <div class="flex flex-col items-center gap-y-5 text-white md:flex-row md:gap-y-0 md:space-x-5 md:justify-between px-8">
+                <ul class="flex flex-col md:flex-row gap-y-4 md:gap-y-0 items-center md:space-x-10">
                     <li>
-                        <a href="#" class="hover:text-primary px-6  flex justify-end">
-                            <span>Services</span>  
+                        <a href="#" class="hover:text-primary">
+                            English
                         </a>
                     </li>
                     <li>
                         <a href="#" class="hover:text-primary">
-                            <span>Privacy Policy</span>
+                            Privacy Policy
                         </a>
                     </li>
                     <li>
                         <a href="#" class="hover:text-primary">
-                            <span>Phone</span>
+                            Phone
                         </a>
                     </li>
                 </ul>  
+
+                <div class="flex items-center icons space-x-5">         
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href=".https://t.me/DeborahAma">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                    <a href="https://wa.me/+23058418557">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/deborah-paintsil-a2b4aa1a5/">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.facebook.com/deborah.paintsil.904">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
             </div>
 
-            <div class="flex justify-end mr-10 icons">
-                <!-- <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-youtube"></i> -->
-                <a href="">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href=".https://t.me/DeborahAma">
-                    <i class="fa-brands fa-telegram"></i>
-                </a>
-                <a href="https://wa.me/+23058418557">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/deborah-paintsil-a2b4aa1a5/">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="https://www.facebook.com/deborah.paintsil.904">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
+            <div class="text-center py-5 text-base text-white">
+                <p>&copy; 2023 DAPS.COM</p>
             </div>
-        </div>
-
-        <div class="text-center py-5 text-base text-white">
-            <p>&copy; 2023 DAPS.COM</p>
-        </div>
 
 
-   </footer>
+        </footer>
 
    <script src="../modules/country.js"></script>
    <script src="../modules/about.js"></script>
+   <script src="../modules/menu.js"></script>
 </body>
 </html>
