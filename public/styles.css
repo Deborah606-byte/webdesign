@@ -234,7 +234,6 @@ table th, table td{
     justify-content: space-between;
   }
   .info{
-    margin-top: 8em;
     margin-left: 5em;
   }
   .index_icons{
@@ -242,7 +241,7 @@ table th, table td{
     display: flex;
     flex-flow:column wrap;
     color: white;
-    top: 45%;
+    top: 40%;
     margin-left: 1.2em;
   }  
     .hero .content .travellers{
@@ -254,6 +253,9 @@ table th, table td{
         height: 220px;
         margin-top: 18em;
         
+     }
+     .discover{
+        margin-top: 6em;
      }
      
      /* compare page */
@@ -288,8 +290,8 @@ table th, table td{
 
      @media (max-width: 800px) {
         /* landing page  responsiveness*/
-        .land_travellers{
-            display:none;
+        .hero{
+            margin-left: -4em;
         }
         .index_icons{
             display: flex;
@@ -331,9 +333,10 @@ table th, table td{
         /*footer responsiveness*/
 
         /*rate responsiveness*/
-        /* .chartBox{
-            width: 400px;
-        }  */
+        .chartBox{
+            width: 100%;
+            padding: 2px;
+        } 
         /*home responsiveness*/
        .search-box{
         padding-top: 10em;
