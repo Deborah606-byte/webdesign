@@ -6,7 +6,6 @@
 html{
     scroll-behavior: smooth;
 }
-
 .home_heading{
     background-image: url('../IMAGES/WorldMap.svg');
 }
@@ -286,6 +285,17 @@ table th, table td{
         .land_travellers{
             display:none;
         }
+        .index_icons{
+            display: flex;
+            flex-flow:row;
+            color: white;
+            top: 90%;
+            justify-content: space-between;
+            margin-left: -1.2em;
+        }  
+        .index_icons a{
+            padding-left: 2em;
+        }
         /*search result responsiveness*/
         .main{
             display: flex;
@@ -301,11 +311,15 @@ table th, table td{
         .testify{
             display: flex;
             flex-direction: row;
-            width: 25em;
+            width: 21em;
+            height: 6em;
         }
         .testimonials{
             margin-left: -5em;
             align-items: center;
+        }
+        .testimonials h4{
+            text-align: center;
         }
 
         /*footer responsiveness*/
@@ -313,8 +327,10 @@ table th, table td{
         /*rate responsiveness*/
         .chartBox{
             width: 400px;
-        }
-        .chartFilter{
-            
-        }
+        } 
+        /*home responsiveness*/
+       .search-box{
+        padding-top: 10em;
+       }
+
     }   

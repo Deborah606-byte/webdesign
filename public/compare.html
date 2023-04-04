@@ -22,13 +22,19 @@
 </head>
 <body>
     <header class="bg-cover p-2 compare_heading bg-black/60">
-        <nav class="text-white fixed top-0 left-0 w-full bg-element">
-            <div class="flex justify-between mx-2">
-                    <h1 class="ml-2 text-4xl font-extrabold name">
+        <nav class="text-white fixed top-0 left-0 w-full bg-element z-50">
+            <div class="flex justify-between items-center">
+                    <h1 class="ml-4 text-4xl font-extrabold name">
                      <a href="/public/index.html">DAPS Search</a>      
                     </h1>
     
-                    <ul class="md:flex items-center space-x-8 uppercase font-bold hidden main_menu" id="menu">
+                    <div class="pt-3 pr-3 cursor-pointer md:hidden" id="burger">
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>                                           
+                    </div>
+    
+                    <ul class="hidden uppercase font-bold  flex-col items-start space-y-7 absolute top-12 bg-element/80 w-full px-2 py-4 md:flex md:w-auto md:flex-row md:items-center md:space-x-8 md:space-y-0 md:relative md:top-0 md:bg-transparent md:py-0" id="menu">
                         <li>
                             <a href="./home.html" class="hover:text-primary flex justify-end">
                                 <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -38,7 +44,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="text-primary flex justify-end">
+                            <a href="./compare.html" class="hover:text-primary flex justify-end">
                                 <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z" />
                                   </svg>                           
@@ -62,12 +68,6 @@
                             </a>
                         </li>
                     </ul>
-    
-                    <div class="pt-3 cursor-pointer md:hidden" id="burger">
-                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>                                           
-                    </div>
     
                     <!-- <div class="closeMenu hidden"><i class="fa fa-times"></i></div> -->
                 </div>
