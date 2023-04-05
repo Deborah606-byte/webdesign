@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const option = document.createElement('option');
         option.value = name;
         option.text = name;
-        listName.add(option);
+        // listName.add(option);
+        listName.appendChild(option);
       });
   }
   countryList.addEventListener("keyup", (e) =>{
