@@ -577,6 +577,10 @@ video {
   top: 3rem;
 }
 
+.top-\[100\%\]{
+  top: 100%;
+}
+
 .z-50{
   z-index: 50;
 }
@@ -780,6 +784,10 @@ video {
   width: 350px;
 }
 
+.w-\[80\%\]{
+  width: 80%;
+}
+
 .w-full{
   width: 100%;
 }
@@ -904,6 +912,10 @@ video {
   border-radius: 1.5rem;
 }
 
+.rounded-\[10px\]{
+  border-radius: 10px;
+}
+
 .rounded-full{
   border-radius: 9999px;
 }
@@ -1003,6 +1015,10 @@ video {
   padding: 1rem;
 }
 
+.p-\[5px\]{
+  padding: 5px;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1056,11 +1072,6 @@ video {
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .pb-2{
