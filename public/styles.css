@@ -377,17 +377,11 @@ table th, table td{
         } 
 
        /*compare responsiveness*/
-       .compare{
+       /* .compare{
         padding-top: 14em;
         padding-bottom: 5em;
-       }
-
-       /* about responsiveness */
-       /* .About_us{
-        background-color: red;
-        display: flex;
-        flex-wrap: wrap-reverse;
        } */
+
        .about-company,
        .about-developer{
         display: flex;
