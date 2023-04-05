@@ -268,9 +268,9 @@ table th, table td{
         text-align: left;
      }
 
-      /* rate of living */
+      /* countries page */
       .rate_heading{
-        background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../IMAGES/about.svg');
+        background-image: url('../IMAGES/about.svg');
         background-size: cover;
       }
       .city_form{
@@ -287,6 +287,43 @@ table th, table td{
         border: solid 3px rgba(54, 162, 235, 1);
         background: white;
       }
+     .countries{
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+     }
+     .continent{ 
+        min-height: 350px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        width: 300px;
+        border-radius: 5px;
+        overflow: hidden;
+     }
+     .country-img{
+        height: 250px;
+     }
+     .country-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+     }
+     .country-info{
+        padding: 20px 17px;
+     }
+     .country-info h4{
+        color:#0E2A47;
+        font-weight:bolder;
+        padding: 8px 0;
+        letter-spacing: 1px;
+     }
+     .country-info p{
+        letter-spacing: 2px;
+     }
+     .country-info p > strong{
+        color: #00344A;
+        font-weight:600;
+     }
+
 
      @media (max-width: 800px) {
         /* landing page  responsiveness*/

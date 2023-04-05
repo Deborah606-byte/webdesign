@@ -44,12 +44,10 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-primary flex justify-end">
-                            <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
-                              </svg>                              
-                            <span class="ml-1">Data</span>
-                        </a>
+                        <a href="./country.html" class="hover:text-primary flex justify-end">
+                            <i class="fa-solid fa-earth-americas mr-1"></i>                              
+                            <span class="ml-1">Countries</span>
+                        </a> 
                     </li>
                     <li>
                         <a href="./about.html" class="hover:text-primary flex justify-end">
@@ -65,14 +63,82 @@
                 </div>
             </nav>
 
-        <div class="py-24 font-thin text-center text-white md:text-lg">
-            <span>We provide every country's capital rate of living over the years</span>
-            <br>
-            <span>Our website aim to help you to track how fast or slow a country's capitals living has increased over the years</span>
-            <br>
-            <span>Users have the ability to filter data by year, country, or specific expense categories</span>
-        </div>
+            <div class="py-24 mx-auto lg:flex flex-col items-center gap-y-5">
+                <form id="search_form" class="search-box flex justify-center items-center mx-auto">
+                    <div class="bg-white rounded-3xl px-5 w-[350px] border-2 border-slate-700 hover:border-slate-900 hover:border-[3px] search-wrapper">                 
+                        <input id="country-info" type="text" placeholder="Search for countries" class="bg-white placeholder:text-slate-400 text-sm outline-none px-7 py-3">
+                    </div>  
+                    <!-- <button type="submit" id="search-btn" class="border-2 border-white w-20 hover:text-black hover:bg-white text-white h-10 rounded-r-3xl ml-2">Search</button>  -->
+                    <select class="ml-2 block border-2 bg-black w-40 h-10 text-white my-5 rounded-full ">
+                        <option value="select continent">Select Continent</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="America">Americas</option>
+                        <option value="Oceania">Oceania</option>
+                        
+                    </select> 
+                </form>
+                <div class="mt-5 font-thin text-center text-white md:text-lg intro">
+                    <span>Our website aim to help you to track how fast or slow a country's capitals living has increased over the years</span>
+                    <br>
+                    <span>Know the countries in the world!!</span>
+                </div>
+                </div>
+            </div>
     </header>
+
+    <section class="countries p-4">
+            <div class="continent">
+                <div class="country-img">
+                     <img src="https://flagcdn.com/bb.svg" alt="country">
+                </div>
+                <div class="country-info">
+                    <h4>Barbados</h4>
+                    <p><strong>Population: </strong>287371</p>
+                    <p><strong>Region: </strong>Americas</p>
+                    <p><strong>Capital: </strong>Bridgetown</p>
+                </div>
+            </div>
+
+             <!-- <div class="card hover:shadow-lg pb-2 country-card">
+                <div class="country-img">
+                     <img src="https://flagcdn.com/bb.svg" alt="country">
+                </div>
+                <div class="country-info py-3 bg-white p-2">
+                    <h4 class="font-semibold text-2xl mb-1 text-heading">Barbados</h4>
+                    <p class="text-element font-extralight"><strong>Population: </strong>287371</p>
+                    <p class="text-element font-extralight"><strong>Region: </strong>Americas</p>
+                    <p class="text-element font-extralight"><strong>Capital: </strong>Bridgetown</p>
+                </div>
+             </div>
+
+             <div class="card hover:shadow-lg pb-2 country-card">
+                <div class="country-img">
+                     <img src="https://flagcdn.com/bb.svg" alt="country">
+                </div>
+                <div class="country-info py-3 bg-white p-2">
+                    <h4 class="font-semibold text-2xl mb-1 text-heading">Barbados</h4>
+                    <p class="text-element font-extralight"><strong>Population: </strong>287371</p>
+                    <p class="text-element font-extralight"><strong>Region: </strong>Americas</p>
+                    <p class="text-element font-extralight"><strong>Capital: </strong>Bridgetown</p>
+                </div>
+             </div>
+
+             <div class="card hover:shadow-lg pb-2 country-card">
+                <div class="country-img">
+                     <img src="https://flagcdn.com/bb.svg" alt="country">
+                </div>
+                <div class="country-info py-3 bg-white p-2">
+                    <h4 class="font-semibold text-2xl mb-1 text-heading">Barbados</h4>
+                    <p class="text-element font-extralight"><strong>Population: </strong>287371</p>
+                    <p class="text-element font-extralight"><strong>Region: </strong>Americas</p>
+                    <p class="text-element font-extralight"><strong>Capital: </strong>Bridgetown</p>
+                </div>
+             </div> -->
+
+        </div>
+    </section>
 
     <section class="py-10 chart-data">
             <div class="col-span-10 chartBox mx-auto">
@@ -218,6 +284,7 @@
    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
    <script src="../modules/menu.js"></script>
    <script src="../modules/data.js"></script>
+    <script src="../modules/countries.js"></script>
 
 
 
