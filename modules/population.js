@@ -34,5 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
         countryListName(filteredData);
       });
   });
+  countryList.value = listName.value;
   
 });
