@@ -6,16 +6,18 @@ document.addEventListener("DOMContentLoaded", function() {
       const countryNames = list.map(country => country.name.common);
       listName.innerHTML = '';
       countryNames.forEach(name => {
+        // const select = document.createElement('select');
         const option = document.createElement('option');
         option.value = name;
         option.text = name;
         // listName.add(option);
+        // select.appendChild(option);
         listName.appendChild(option);
       });
   }
   countryList.addEventListener("keyup", (e) =>{
       e.preventDefault();
-
+      
       displayList.classList.add("hidden");
       
       const searchTerm = e.target.value.toLowerCase().trim();
@@ -28,7 +30,9 @@ document.addEventListener("DOMContentLoaded", function() {
         const filteredData = data.filter(country => {
           return country.name.common.toLowerCase().startsWith(searchTerm);
         });
+        displayList.classList.remove("hidden");
         countryListName(filteredData);
       });
   });
+  
 });
