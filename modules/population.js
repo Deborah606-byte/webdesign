@@ -10,17 +10,25 @@ document.addEventListener("DOMContentLoaded", function() {
         const option = document.createElement('option');
         option.value = name;
         option.text = name;
-        // listName.add(option);
-        // select.appendChild(option);
         listName.appendChild(option);
       });
   }
-  countryList.addEventListener("keyup", (e) =>{
+
+  listName.addEventListener("click", (e) => {
+    countryList.value = e.target.value;
+  })
+
+  countryList.addEventListener("keyup", (e) => {
       e.preventDefault();
       
-      displayList.classList.add("hidden");
+      listName.classList.add("hidden");
       
       const searchTerm = e.target.value.toLowerCase().trim();
+
+      if(searchTerm === ""){
+        listName.classList.add("hidden");
+        return null;
+      }
       
       const url = 'https://restcountries.com/v3.1/all';
     
@@ -30,10 +38,14 @@ document.addEventListener("DOMContentLoaded", function() {
         const filteredData = data.filter(country => {
           return country.name.common.toLowerCase().startsWith(searchTerm);
         });
-        displayList.classList.remove("hidden");
+
+        if(!(filteredData?.length > 0)){
+          listName.classList.add("hidden");
+          return null;
+        }
+
+        listName.classList.remove("hidden");
         countryListName(filteredData);
       });
   });
-  countryList.value = listName.value;
-  
 });

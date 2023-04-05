@@ -254,6 +254,7 @@ table th, table td{
         margin-top: 18em;
         
      }
+     
      .discover{
         margin-top: 6em;
      }
@@ -290,10 +291,12 @@ table th, table td{
      .countries{
         padding: 30px;
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 50px;
      }
      .continent{ 
         min-height: 350px;
+        margin: 0 auto;
         box-shadow: 0 0 5px rgba(0,0,0,0.3);
         width: 300px;
         border-radius: 5px;

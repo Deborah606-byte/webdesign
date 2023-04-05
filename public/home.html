@@ -71,20 +71,23 @@
                 </div>
             </nav>
 
-        <div class="py-24 mx-auto lg:flex flex-col items-center gap-y-5">
-            <form id="search_form" class="search-box flex justify-center items-center mx-auto relative">
+        <div class="py-24 mx-auto lg:flex flex-col items-center gap-y-5 home-hero">
+            <form id="search_form" class="search-box flex justify-center items-center">
                 <div class="bg-white rounded-3xl px-5 w-[350px] border-2 border-slate-700 hover:border-slate-900 hover:border-[3px] search-wrapper">                 
                     <input id="country-info" type="text" placeholder="Search for countries" class="bg-white placeholder:text-slate-400 text-sm outline-none px-7 py-3">
                 </div>
-                <select class="absolute bg-white top-[100%] w-[50%] rounded-[10px] p-[5px] left-0 hidden countriesList" id="displayList">
-                    <option value="">Select a country</option>
-                <select>  
-                
-                <button type="submit" id="search-btn" class="border-2 border-white w-20 hover:text-black hover:bg-white text-white h-10 rounded-r-3xl ml-2">Search</button>  
+
+                <button type="submit" id="search-btn" class="border-2 border-white w-20 hover:text-black hover:bg-white text-white h-10 rounded-r-3xl ml-2">Search</button>
             </form>
+
+            <select class="bg-white rounded-full py-2 px-4 mx-auto mt-4 hidden" id="displayList">
+                <option value="">Select a country</option>
+            <select>  
+
             <div class="mt-5 font-thin text-center text-white md:text-lg intro">
                 <span>More Than Just A Country Search!!</span>
             </div>
+
         </div>
     </header>
 
