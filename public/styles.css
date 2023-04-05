@@ -367,20 +367,11 @@ table th, table td{
             text-align: center;
         }
 
-        /*footer responsiveness*/
-
         /*rate responsiveness*/
         .chartBox{
             width: 100%;
             padding: 2px;
         } 
-        /*home responsiveness*/
-       .search-box{
-        padding-top: 10em;
-       }
-       .intro{
-        padding-bottom: 5em;
-       }
 
        /*compare responsiveness*/
        .compare{

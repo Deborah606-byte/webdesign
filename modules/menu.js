@@ -7,10 +7,12 @@ burger.addEventListener('click', () =>{
         menu.classList.remove('hidden');
         menu.classList.add('flex');
         discover.classList.add("discover");
+        search_form.classList.add("discover");
     } else{
         menu.classList.remove('flex');
         menu.classList.add('hidden');
         discover.classList.remove("discover");
+        search_form.classList.remove("discover");
     }
 });
 
