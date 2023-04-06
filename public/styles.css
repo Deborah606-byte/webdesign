@@ -414,5 +414,9 @@ table th, table td{
          padding-right: 2em;
          padding-left: 3em;
        }
+       .country-search{
+        display: flex;
+        flex-direction: column;
+       }
     
     }   
