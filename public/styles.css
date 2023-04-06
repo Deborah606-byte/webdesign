@@ -295,10 +295,10 @@ table th, table td{
         gap: 50px;
      }
      .continent{ 
-        min-height: 350px;
+        min-height: 200px;
         margin: 0 auto;
         box-shadow: 0 0 5px rgba(0,0,0,0.3);
-        width: 300px;
+        width: 250px;
         border-radius: 5px;
         overflow: hidden;
      }
@@ -325,6 +325,9 @@ table th, table td{
      .country-info p > strong{
         color: #00344A;
         font-weight:600;
+     }
+     .showDropDown{
+        display: block;
      }
 
 
