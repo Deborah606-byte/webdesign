@@ -704,6 +704,18 @@ video {
   margin-top: 9em;
 }
 
+.ml-auto{
+  margin-left: auto;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
+}
+
+.mt-14{
+  margin-top: 3.5rem;
+}
+
 .block{
   display: block;
 }
@@ -778,6 +790,14 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-\[50\]{
+  width: 50;
+}
+
+.w-\[50\%\]{
+  width: 50%;
 }
 
 .max-w-3xl{

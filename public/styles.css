@@ -319,7 +319,7 @@ table th, table td{
 
       /* countries page */
       .rate_heading{
-        background-image: url('../IMAGES/about.svg');
+        background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../IMAGES/about.svg');
         background-size: cover;
       }
       .city_form{
@@ -389,6 +389,36 @@ table th, table td{
         background-color: #0E2A47;
      }
 
+     /* FAQ page */
+     .FAQaccordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+      }
+      
+      .action, .FAQaccordion:hover {
+        background-color: #ccc;
+      }
+      
+      .FAQaccordion:after {
+        content: '\002B';
+        color: #777;
+        font-weight: bold;
+        float: right;
+      }
+      
+      .action:after {
+        content: "\2212";
+      }
+      
+      .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+      }
 
      @media (max-width: 800px) {
         /* landing page  responsiveness*/

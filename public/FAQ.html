@@ -17,7 +17,7 @@
         <nav class="text-white fixed top-0 left-0 w-full bg-element z-50">
             <div class="flex justify-between items-center">
                 <h1 class="ml-4 text-4xl font-extrabold name">
-                 <a href="./index.html">DAPS Search</a>      
+                 <a href="./home.html">DAPS Search</a>      
                 </h1>
 
                 <div class="pt-3 pr-3 cursor-pointer md:hidden" id="burger">
@@ -67,46 +67,58 @@
         <div class="max-w-3xl bg-white px-5 py-5 rounded shadow-2xl mx-auto">
             <h4 class="text-heading font-bold text-2xl">FAQ</h4>
             <p class="p-2 text-element">At DAPS Search, we are committed to protecting the privacy and security of our users' personal information. 
-                This Privacy Policy describes how we collect, use, 
-                and protect the personal information we collect from users through our online form.
+                This Frequently Answered Questions page helps to answer various questions
+                about the website, how to navigate and how to contact us if you have any issue.
             </p>
-            <h6 class="text-heading font-light mt-4">Types of information collected:</h6>
-            <p class="text-element">We collect the following types of personal information from users through our online form: 
-                <ul class="mt-2 list-disc px-10">
-                    <li class="font-light">Name</li>
-                    <li class="font-light">Email address</li>
-                    <li class="font-light">Phone number</li>
-                    <li class="font-light">Any other information required</li>
-                </ul>
+
+            <button class="text-heading font-light FAQaccordion mt-7">Do I need to login to be able to access information?</button>
+            <div class="panel">
+            <p>No, you do not need to create an account to be able to get various informations about the countries.
+                All information given is free upon searching by a country's name. This is your go-to website that can helped
+                you get access to any country you want.
             </p>
-            <h6 class="text-heading font-light mt-4">Purpose of collecting information:</h6>
-            <p class="text-element">We collect these information to: 
-                <ul class="mt-2 list-disc px-10">
-                    <li class="font-light">To respond to inquiries and provide customer service</li>
-                    <li class="font-light">To send newsletters and marketing emails (if the user has opted in to receive them)</li>
-                    <li class="font-light">To conduct research and improve our services</li>
-                </ul>
+            </div>
+            <button class="text-heading font-light FAQaccordion  mt-7">How do I get information about a specific to a specific country?</button>
+            <div class="panel">
+            <p>On the home page, there is a search bar that allows users to enter a name of the country they want to get information on.
+                Also, for user experience, if a user enters an alphabet, a list of countries with that starts with that alphabet is displayed.
+                On the countries page, all the countries in the world has been listed for the user to know which continent each country is located.
             </p>
-            <h6 class="text-heading font-light mt-4">How information is protected:</h6>
-            <p class="text-element">We take appropriate security measures to protect the personal information of our users. 
-                <br>This includes using secure servers and encryption to transmit sensitive data.
+            </div>
+            <button class="text-heading font-light FAQaccordion mt-7">When I fill the form, how many hours does it take to get a feedback?</button>
+            <div class="panel">
+            <p>Within 4-8 hours, our service team will get in touch with you either trhough email or phone number given .
             </p>
-            <h6 class="text-heading font-light mt-4">User rights:</h6>
-            <p class="text-element">Users have the following rights with regards to their personal information:: 
-                <ul class="mt-2 list-disc px-10">
-                    <li class="font-light">The right to access their personal information</li>
-                    <li class="font-light">The right to correct their personal information</li>
-                    <li class="font-light">The right to delete their personal information</li>
-                    <li class="font-light">The right to object to the processing of their personal information</li>
-                    <li class="font-light">The right to data portability</li>
-                </ul>
+            </div>
+            <button class="text-heading font-light FAQaccordion mt-7">How do I enter a specific city to get the cost of living?</button>
+            <div class="panel">
+            <p>On the compare page, there are two search bars that requires a user to enter the city. An example of how to enter the city name is given. 
+                Due to the nature of the API used, a user must enter the name of the city and the country. Example: Accra/Ghana
             </p>
-            <h6 class="text-heading font-light mt-4">Contact Information</h6>
+            </div>
+            <h6 class="text-heading font-light mt-7">Contact Information</h6>
             <p class="text-element">
                 If you have any questions or concerns about our privacy practices, please contact us at 
                 <span class="font-extrabold underline">dapssearch@gmail.com</span>
             </p>
         </div>
     </section>
+
+    <script>
+        var acc = document.getElementsByClassName("FAQaccordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("action");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
 </body>
 </html>
