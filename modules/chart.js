@@ -69,33 +69,3 @@ async function getData() {
 
   }
   
-  
-
-//fetch data from rest api
-// async function getData(){
-//     var subRegion = [], subRegionNumber = []
-    
-// fetch("https://restcountries.com/v3.1/all")
-// .then((response)=>{
-//     return response.json()
-// })
-// .then((data)=>{
-//     let subregions = {};
-
-//     data.forEach(element => {
-//         if(subregions[element.subregion]){
-//             subregions[element.subregion] = subregions[element.subregion] + 1;
-//             console.log(0)
-//         }
-
-//         else{
-//             subregions[element.subregion] = 1;
-//         }
-//     });
-    
-//         console.log(subregions);
-// })
-// .catch((e) =>{
-//     console.log(e)
-// })
-// }
