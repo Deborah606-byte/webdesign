@@ -9,7 +9,7 @@ async function getCountry(){
   const res = await url.json();
   countryData = res;
   console.log(countryData);
-  showCountry(countryData.slice(0,6));
+  showCountry(countryData.slice(0,8));
 }
 
 getCountry();
@@ -46,14 +46,14 @@ search.addEventListener("input", (event) => {
   if (query.trim() !== "") {
     searchCountry(query);
   } else {
-    showCountry(countryData.slice(0,6));
+    showCountry(countryData.slice(0,8));
   }
 });
 
 dropList.addEventListener("change", (event) => {
   const selectedContinent = event.target.value;
   if (selectedContinent === "select continent") {
-    showCountry(countryData.slice(0,6));
+    showCountry(countryData.slice(0,8));
   } else {
     const filteredData = countryData.filter((country) => {
       return country.region === selectedContinent;

@@ -291,7 +291,7 @@ table th, table td{
      .countries{
         padding: 30px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 50px;
      }
      .continent{ 
@@ -301,6 +301,7 @@ table th, table td{
         width: 250px;
         border-radius: 5px;
         overflow: hidden;
+        background-color: #144272;
      }
      .country-img{
         height: 250px;
@@ -314,7 +315,7 @@ table th, table td{
         padding: 20px 17px;
      }
      .country-info h4{
-        color:#0E2A47;
+        color:white;
         font-weight:bolder;
         padding: 8px 0;
         letter-spacing: 1px;
@@ -323,7 +324,7 @@ table th, table td{
         letter-spacing: 2px;
      }
      .country-info p > strong{
-        color: #00344A;
+        color: white;
         font-weight:600;
      }
      .showDropDown{
@@ -350,7 +351,7 @@ table th, table td{
         /*search result responsiveness*/
         .main{
             display: flex;
-            flex-direction: column;
+            flex-direction: column-reverse;
         }
 
         .country_search_left,
