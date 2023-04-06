@@ -60,5 +60,6 @@ dropList.addEventListener("change", (event) => {
     });
     showCountry(filteredData);
   }
+  console.log(selectedContinent);
 });
 

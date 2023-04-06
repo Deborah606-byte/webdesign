@@ -780,6 +780,10 @@ video {
   width: 100%;
 }
 
+.max-w-3xl{
+  max-width: 48rem;
+}
+
 .max-w-full{
   max-width: 100%;
 }
@@ -790,6 +794,10 @@ video {
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.list-disc{
+  list-style-type: disc;
 }
 
 .grid-flow-row{
@@ -999,6 +1007,11 @@ video {
   padding: 1rem;
 }
 
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1140,6 +1153,10 @@ video {
 
 .font-extralight{
   font-weight: 200;
+}
+
+.font-light{
+  font-weight: 300;
 }
 
 .font-medium{

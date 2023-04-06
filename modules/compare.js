@@ -1,7 +1,7 @@
     let inputOne = document.getElementById("search_one");
     let inputTwo = document.getElementById("search_two");
     let form = document.getElementById("search_form");
-    let loading = document.getElementById("loader"); //
+    let loading = document.getElementById("loader"); 
 
     //for listing the cost and values in tarbular format
     function showList(list){
@@ -75,9 +75,19 @@
 
                     <div class="wrapper">
                         <div class="data-wrapper flex flex-col items-start">
-                            <h4>Restaurant Prices:</h4>
+                            <h4 class="information accordion">
+                            <span>Restaurant Prices</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 open">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                                </svg>
 
-                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 close">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                                </svg>
+
+                            </h4>
+
+                            <table class="border-collapse border-spacing-2 border-2 border-slate-800 hidden_table">
                                 <thead>
                                     <tr>
                                         <th class="text-start border-2 border-slate-800 py-2 w-[100px]">Item</th>
@@ -93,9 +103,19 @@
 
                     <div class="wrapper">
                         <div class="data-wrapper flex flex-col items-start">
-                            <h4>Market Prices:</h4>
+                        <h4 class="information accordion">
+                        <span>Market Prices</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 open">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                            </svg>
 
-                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                            </svg>
+
+                        </h4>
+
+                        <table class="border-collapse border-spacing-2 border-2 border-slate-800 hidden_table">
                                 <thead>
                                     <tr>
                                         <th class="text-start border-2 border-slate-800 py-2 w-[100px]">Item</th>
@@ -111,9 +131,19 @@
 
                     <div class="wrapper">
                         <div class="data-wrapper flex flex-col items-start">
-                            <h4>Transportation Prices:</h4>
+                        <h4 class="information accordion">
+                        <span>Transportation Prices</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 open">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                            </svg>
 
-                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                            </svg>
+
+                        </h4>
+
+                        <table class="border-collapse border-spacing-2 border-2 border-slate-800 hidden_table">
                                 <thead>
                                     <tr>
                                         <th class="text-start border-2 border-slate-800 py-2 w-[100px]">Item</th>
@@ -129,9 +159,19 @@
 
                     <div class="wrapper">
                         <div class="data-wrapper flex flex-col items-start">
-                            <h4>Utilities Per Month Prices:</h4>
+                        <h4 class="information accordion">
+                        <span>Utilities Per Month Prices</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 open">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                            </svg>
 
-                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                            </svg>
+
+                        </h4>
+
+                        <table class="border-collapse border-spacing-2 border-2 border-slate-800 hidden_table">
                                 <thead>
                                     <tr>
                                         <th class="text-start border-2 border-slate-800 py-2 w-[100px]">Item</th>
@@ -147,8 +187,19 @@
 
                     <div class="wrapper">
                         <div class="data-wrapper flex flex-col items-start">
-                            <h4>Sports and Leisure Prices:</h4>
-                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                        <h4 class="information accordion">
+                        <span>Sports and Leisure Prices</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 open">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                            </svg>
+
+                        </h4>
+
+                        <table class="border-collapse border-spacing-2 border-2 border-slate-800 hidden_table">
                                 <thead>
                                   <tr>
                                         <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
@@ -164,8 +215,19 @@
 
                     <div class="wrapper">
                         <div class="data-wrapper flex flex-col items-start">
-                            <h4>Salaries and Financing Prices:</h4>
-                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                        <h4 class="information accordion">
+                        <span>Salaries and Financing Prices</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 open">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                            </svg>
+
+                        </h4>
+
+                        <table class="border-collapse border-spacing-2 border-2 border-slate-800 hidden_table">
                                 <thead>
                                   <tr>
                                         <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
@@ -181,8 +243,19 @@
 
                     <div class="wrapper">
                         <div class="data-wrapper flex flex-col items-start">
-                            <h4>Childcare Prices:</h4>
-                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                        <h4 class="information accordion">
+                        <span>Childcare Prices</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 open">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                            </svg>
+
+                        </h4>
+
+                        <table class="border-collapse border-spacing-2 border-2 border-slate-800 hidden_table">
                                 <thead>
                                   <tr>
                                         <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
@@ -198,8 +271,19 @@
 
                     <div class="wrapper">
                         <div class="data-wrapper flex flex-col items-start">
-                            <h4>Clothing and Shoes Prices:</h4>
-                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                        <h4 class="information accordion">
+                        <span>Clothing and Shoe Prices</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 open">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                            </svg>
+
+                        </h4>
+
+                        <table class="border-collapse border-spacing-2 border-2 border-slate-800 hidden_table">
                                 <thead>
                                   <tr>
                                         <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
@@ -215,8 +299,19 @@
 
                     <div class="wrapper">
                         <div class="data-wrapper flex flex-col items-start">
-                            <h4>Rent Per Month Prices:</h4>
-                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                        <h4 class="information accordion">
+                        <span>Rent Per Month Prices</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 open">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                            </svg>
+
+                        </h4>
+
+                        <table class="border-collapse border-spacing-2 border-2 border-slate-800 hidden_table">
                                 <thead>
                                   <tr>
                                         <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
@@ -232,8 +327,19 @@
 
                     <div class="wrapper">
                         <div class="data-wrapper flex flex-col items-start">
-                            <h4>Buy Apartment Prices:</h4>
-                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                        <h4 class="information accordion">
+                        <span>Buy Apartment Prices</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 open">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                            </svg>
+
+                        </h4>
+
+                        <table class="border-collapse border-spacing-2 border-2 border-slate-800 hidden_table">
                                 <thead>
                                   <tr>
                                         <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
@@ -279,8 +385,19 @@
 
                     <div class="wrapper">
                         <div class="data-wrapper flex flex-col items-start">
-                            <h4>Restaurant Prices:</h4>
-                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                        <h4 class="information accordion">
+                        <span>Restaurant Prices</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 open">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                            </svg>
+
+                        </h4>
+
+                        <table class="border-collapse border-spacing-2 border-2 border-slate-800 hidden_table">
                                 <thead>
                                   <tr>
                                         <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
@@ -296,8 +413,19 @@
 
                     <div class="wrapper">
                         <div class="data-wrapper flex flex-col items-start">
-                            <h4>Market Prices:</h4>
-                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                        <h4 class="information accordion">
+                        <span>Market Prices</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 open">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                            </svg>
+
+                        </h4>
+
+                        <table class="border-collapse border-spacing-2 border-2 border-slate-800 hidden_table">
                                 <thead>
                                   <tr>
                                         <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
@@ -313,8 +441,19 @@
 
                     <div class="wrapper">
                         <div class="data-wrapper flex flex-col items-start">
-                            <h4>Transportation Prices:</h4>
-                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                        <h4 class="information accordion">
+                        <span>Transportation Prices</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 open">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                            </svg>
+
+                        </h4>
+
+                        <table class="border-collapse border-spacing-2 border-2 border-slate-800 hidden_table">
                                 <thead>
                                   <tr>
                                         <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
@@ -330,8 +469,19 @@
 
                     <div class="wrapper">
                         <div class="data-wrapper flex flex-col items-start">
-                            <h4>Utilities Per Month Prices:</h4>
-                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                        <h4 class="information accordion">
+                        <span>Utilities Per Month Prices</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 open">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                            </svg>
+
+                        </h4>
+
+                        <table class="border-collapse border-spacing-2 border-2 border-slate-800 hidden_table">
                                 <thead>
                                   <tr>
                                         <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
@@ -347,8 +497,19 @@
 
                     <div class="wrapper">
                         <div class="data-wrapper flex flex-col items-start">
-                            <h4>Sports and Leisure Prices:</h4>
-                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                        <h4 class="information accordion">
+                        <span>Sports and Leisure Prices</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 open">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                            </svg>
+
+                        </h4>
+
+                        <table class="border-collapse border-spacing-2 border-2 border-slate-800 hidden_table">
                                 <thead>
                                   <tr>
                                         <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
@@ -364,8 +525,19 @@
 
                     <div class="wrapper">
                         <div class="data-wrapper flex flex-col items-start">
-                            <h4>Salaries and Financing Prices:</h4>
-                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                        <h4 class="information accordion">
+                        <span>Salaries and Financing Prices</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 open">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                            </svg>
+
+                        </h4>
+
+                        <table class="border-collapse border-spacing-2 border-2 border-slate-800 hidden_table">
                                 <thead>
                                   <tr>
                                         <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
@@ -381,8 +553,19 @@
 
                     <div class="wrapper">
                         <div class="data-wrapper flex flex-col items-start">
-                            <h4>Childcare Prices:</h4>
-                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                        <h4 class="information accordion">
+                        <span>Childcare Prices</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 open">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                            </svg>
+
+                        </h4>
+
+                        <table class="border-collapse border-spacing-2 border-2 border-slate-800 hidden_table">
                                 <thead>
                                   <tr>
                                         <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
@@ -398,8 +581,19 @@
 
                     <div class="wrapper">
                         <div class="data-wrapper flex flex-col items-start">
-                            <h4>Clothing and Shoes Prices:</h4>
-                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                        <h4 class="information accordion">
+                        <span>Clothings and Shoes Prices</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 open">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                            </svg>
+
+                        </h4>
+
+                        <table class="border-collapse border-spacing-2 border-2 border-slate-800 hidden_table">
                                 <thead>
                                   <tr>
                                         <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
@@ -415,8 +609,19 @@
 
                     <div class="wrapper">
                         <div class="data-wrapper flex flex-col items-start">
-                            <h4>Rent Per Month Prices:</h4>
-                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                        <h4 class="information accordion">
+                        <span>Rent Per Month Prices</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 open">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                            </svg>
+
+                        </h4>
+
+                        <table class="border-collapse border-spacing-2 border-2 border-slate-800 hidden_table">
                                 <thead>
                                   <tr>
                                         <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
@@ -432,8 +637,19 @@
 
                     <div class="wrapper">
                         <div class="data-wrapper flex flex-col items-start">
-                            <h4>Buy Apartment Prices:</h4>
-                            <table class="border-collapse border-spacing-2 border-2 border-slate-800">
+                        <h4 class="information accordion">
+                        <span>Buy Apartment Prices</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 open">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                            </svg>
+
+                        </h4>
+
+                        <table class="border-collapse border-spacing-2 border-2 border-slate-800 hidden_table">
                                 <thead>
                                   <tr>
                                         <th class="border-2 border-slate-800 py-2 w-[100px]">Item</th>
@@ -452,6 +668,25 @@
 
             </div>
             `;
+        let tableInfo = document.getElementsByClassName("information");
+        let hideTable = document.querySelector(".hidden_table");
+        let open = document.querySelector(".open");
+        let close = document.querySelector(".close");
+
+        Array.from(tableInfo).forEach((table) => {
+            console.log(table);
+            table.addEventListener("click", () =>{
+                hideTable.classList.toggle("hidden_table");
+                if(hideTable.classList.contains("hidden_table")){
+                    open.style.display = "block";
+                    close.style.display = "none";
+                }
+                else{
+                    open.style.display = "none";
+                    close.style.display = "block";
+                }
+            })
+        })
 
         console.log(cityOne);
         console.log(cityTwo);

@@ -6,25 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
 
+    <!-- css links -->
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="./styles.css">
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-     crossorigin=""/>
-
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-     crossorigin=""></script>
-
+    <!-- font awesome icon link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
     <header class="bg-cover p-2 about_header">
+        <!-- navbar goes here -->
         <nav class="text-white fixed top-0 left-0 w-full bg-element z-50">
             <div class="flex justify-between items-center">
                 <h1 class="ml-4 text-4xl font-extrabold name">
-                 <a href="/public/index.html">DAPS Search</a>      
+                 <a href="./home.html">DAPS Search</a>      
                 </h1>
 
                 <div class="pt-3 pr-3 cursor-pointer md:hidden" id="burger">
@@ -65,12 +60,10 @@
                         </a>
                     </li>
                 </ul>
-
-                <!-- <div class="closeMenu hidden"><i class="fa fa-times"></i></div> -->
                 </div>
             </nav>
 
-
+        <!-- hero section -->
         <div class="text-center py-24">
             <div class="flex flex-col items-center gap-y-10">
                 <span class="mt-5 font-thin text-center text-white md:text-lg intro">Your go-to website for finding information 
@@ -79,19 +72,11 @@
                         Explore
                     </a>
             </div>
-            <div>
-                <!-- <img src="../IMAGES/woman.png" alt="image" class="hero"> -->
-            </div>
         </div>
     </header>
 
-    <!-- search results -->
-    <div id="result" class="country_result py-5 px-5 hidden">
-
-    </div>
-
     <section class="About_us">
-        <!-- about us goes here -->
+        <!-- about us  and about developer goes here -->
         <div class="p-2 About">
             <h4 class="text-3xl font-bold text-heading text-center">About Company</h4>
             <h4 class="text-xs mb-2 font-bold text-heading text-center">Who Are We?</h4>
@@ -167,7 +152,7 @@
                 </form>
             </div>
 
-            
+            <!-- currency convertor -->
             <div class="max-w-md bg-white px-5 py-5 rounded shadow-2xl" id="convertor">
                 <div class="text-center mb-8">
                     <h4 class="font-bold text-2xl text-heading">CURRENCY CONVERTOR</h4>
@@ -209,6 +194,7 @@
         </div>
     </section>
 
+    <!-- services provided -->
     <section class="py-10">
         <h4 class="text-center text-3xl font-bold text-heading">Our Services</h4>
         <div class="flex justify-center mt-10 services gap-10">
@@ -234,7 +220,7 @@
         </div>
     </section>
 
-        <!-- Footer goes here -->
+    <!-- Footer goes here -->
     <footer class="end pt-8 rounded-t-3xl">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mt-5">
             <div class="col-span-1 md:col-span-4 lg:col-span-3 px-4 md:place-self-end mx-auto relative -top-5">
@@ -315,10 +301,9 @@
         <div class="text-center py-5 text-base text-white">
             <p>&copy; 2023 DAPS.COM</p>
         </div>
-
-
     </footer>
 
+    <!-- javascript goes here -->
    <script src="../modules/country.js"></script>
    <script src="../modules/about.js"></script>
    <script src="../modules/menu.js"></script>

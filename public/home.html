@@ -6,26 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAPs Search</title>
 
+    <!-- css links -->
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="./styles.css">
 
+    <!-- font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- leaflet links for map -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
      crossorigin=""/>
-
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
      crossorigin=""></script>
 
+     <!-- jquery cdn -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="bg-cover p-2 home_heading">
+        <!-- navbar goes here -->
         <nav class="text-white fixed top-0 left-0 w-full bg-element z-50">
             <div class="flex justify-between items-center">
                 <h1 class="ml-4 text-4xl font-extrabold name">
-                 <a href="/public/index.html">DAPS Search</a>      
+                 <a href="./index.html">DAPS Search</a>      
                 </h1>
 
                 <div class="pt-3 pr-3 cursor-pointer md:hidden" id="burger">
@@ -66,11 +71,10 @@
                         </a>
                     </li>
                 </ul>
-
-                <!-- <div class="closeMenu hidden"><i class="fa fa-times"></i></div> -->
                 </div>
             </nav>
-
+        
+        <!-- search bar -->
         <div class="py-24 mx-auto lg:flex flex-col items-center gap-y-5 home-hero">
             <form id="search_form" class="search-box flex justify-center items-center">
                 <div class="bg-white rounded-3xl px-5 w-[350px] border-2 border-slate-700 hover:border-slate-900 hover:border-[3px] search-wrapper">                 
@@ -91,10 +95,8 @@
         </div>
     </header>
 
+    <!-- loader goes here -->
     <div id="loader" class="text-3xl font-bold text-center py-3 mt-5 hidden">
-        <!-- <div class="progress">
-            <div class="determine"></div>
-        </div> -->
     </div>
 
     <!-- search results -->
@@ -475,7 +477,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="hover:text-primary">
+                    <a href="./privacypolicy.html" class="hover:text-primary">
                         Privacy Policy
                     </a>
                 </li>
@@ -508,8 +510,6 @@
         <div class="text-center py-5 text-base text-white">
             <p>&copy; 2023 DAPS.COM</p>
         </div>
-
-
    </footer>
 
     <!-- JavaScript goes here -->

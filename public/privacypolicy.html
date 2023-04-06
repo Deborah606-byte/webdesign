@@ -4,23 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Privacy Policy</title>
 
     <!-- css links -->
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="./styles.css">
 
-    <!-- font awesome link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    
 </head>
-<body class="landing_page">
-    <header class="bg-cover p-2 landing_header ">
+<body>
+    <header class="bg-cover p-2 privacy_heading">
         <!-- navbar goes here -->
-        <nav class="text-white fixed top-0 left-0 w-full">
-        <div class="flex justify-between items-center">
+        <nav class="text-white fixed top-0 left-0 w-full bg-element z-50">
+            <div class="flex justify-between items-center">
                 <h1 class="ml-4 text-4xl font-extrabold name">
-                 <a href="./home.html">DAPS Search</a>      
+                 <a href="./index.html">DAPS Search</a>      
                 </h1>
 
                 <div class="pt-3 pr-3 cursor-pointer md:hidden" id="burger">
@@ -31,7 +28,7 @@
 
                 <ul class="hidden uppercase font-bold  flex-col items-start space-y-7 absolute top-12 bg-element/80 w-full px-2 py-4 md:flex md:w-auto md:flex-row md:items-center md:space-x-8 md:space-y-0 md:relative md:top-0 md:bg-transparent md:py-0" id="menu">
                     <li>
-                        <a href="./home.html" class="hover:text-primary flex justify-end">
+                        <a href="#" class="text-primary flex justify-end">
                             <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                               </svg>
@@ -50,7 +47,7 @@
                         <a href="./country.html" class="hover:text-primary flex justify-end">
                             <i class="fa-solid fa-earth-americas mr-1"></i>                              
                             <span class="ml-1">Countries</span>
-                        </a>                        
+                        </a>
                     </li>
                     <li>
                         <a href="./about.html" class="hover:text-primary flex justify-end">
@@ -61,55 +58,36 @@
                         </a>
                     </li>
                 </ul>
-
-            </div>
-        </nav>
+                </div>
+            </nav>
     </header>
-    
-    <!-- hero section -->
-    <div class="hero">
-        <div class="content">
-            <div class="info flex flex-col gap-y-2 mt-[9em]">
-                <h1 class="lg:text-5xl text-white font-extrabold mb-4 text-3xl">Discover the World</h1>
-                <span class="text-1xl text-white">Explore the Beauty and Diversity of Different Countries. </span>
-                <span class="text-1xl text-white">This website strive to educate and excite visitors about various <br>
-                    nations, their cultures, and their costs of living.
-                </span>
-                <a href="./home.html" class="rounded-3xl w-[150px] px-5 py-3 bg-transparent border-white border-2 text-white text-center hover:bg-white hover:text-black transition-all">
-                    Explore
-                </a>
-            </div>
-           
-            <div class="travellers space-x-10 hidden">
-                     <img src="../IMAGES/travel_woman.png" class="land_travellers rounded-3xl md:block hidden">
-              
-                    <img src="../IMAGES/girl_travel.png" class="land_travellers rounded-3xl md:block hidden">
-               
-                     <img src="../IMAGES/girl.png" class="land_travellers rounded-3xl md:block hidden">
-                 
-             </div>
+
+    <!-- content goes here -->
+    <section class="privacy-policy py-5">
+        <div class="max-w-3xl bg-white px-5 py-5 rounded shadow-2xl mx-auto">
+            <h4 class="text-heading font-bold text-2xl">Privacy Policy</h4>
+            <p class="p-2 text-element">At DAPS Search, we are committed to protecting the privacy and security of our users' personal information. 
+                This Privacy Policy describes how we collect, use, 
+                and protect the personal information we collect from users through our online form.
+            </p>
+            <h6 class="text-heading font-light mt-4">Types of information collected:</h6>
+            <p class="text-element">We collect the following types of personal information from users through our online form: 
+                <ul class="mt-2 list-disc px-10">
+                    <li class="font-light">Name</li>
+                    <li class="font-light">Email address</li>
+                    <li class="font-light">Phone number</li>
+                    <li class="font-light">Any other information required</li>
+                </ul>
+            </p>
+            <h6 class="text-heading font-light mt-4">Purpose of collecting information:</h6>
+            <p class="text-element">We collect these information to: 
+                <ul class="mt-2 list-disc px-10">
+                    <li class="font-light">To respond to inquiries and provide customer service</li>
+                    <li class="font-light">To send newsletters and marketing emails (if the user has opted in to receive them)</li>
+                    <li class="font-light">To conduct research and improve our services</li>
+                </ul>
+            </p>
         </div>
-    </div>
-
-    <!-- social media icons -->
-    <div class="index_icons">
-        <a href="">
-            <img src="../IMAGES/instagram-original.svg" class = "mb-3 w-8">
-        </a>
-        <a href=".https://t.me/DeborahAma">
-            <img src="../IMAGES/telegram-original.svg" class="mb-3  w-8">
-        </a>
-        <a href="https://wa.me/+23058418557">
-            <img src="../IMAGES/whatsapp.svg" class="mb-3 w-8">
-        </a>
-        <a href="https://www.linkedin.com/in/deborah-paintsil-a2b4aa1a5/">
-            <img src="../IMAGES/linkedin (1).svg" class="mb-3 w-8">
-        </a>
-        <a href="https://www.facebook.com/deborah.paintsil.904">
-            <img src="../IMAGES/facebook-line.svg" class="w-8">
-        </a>
-    </div>
-
-    <script type="module" src="../modules/menu.js"></script>
+    </section>
 </body>
 </html>
