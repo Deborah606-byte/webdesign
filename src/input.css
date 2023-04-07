@@ -20,5 +20,5 @@ html{
 }
 
 .information{
-    @apply text-white text-sm font-extrabold  p-2 absolute top-0 ml-7 mt-10 text-center;
+    @apply text-primary text-sm font-extrabold  p-2 absolute top-0 ml-7 mt-10 text-center;
 } 

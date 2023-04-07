@@ -1277,7 +1277,7 @@ html{
   line-height: 1.25rem;
   font-weight: 800;
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(255 99 99 / var(--tw-text-opacity));
 }
 
 .placeholder\:text-slate-400::-moz-placeholder{
