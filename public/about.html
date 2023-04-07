@@ -137,7 +137,7 @@
                     <h4 class="font-bold text-2xl text-heading">SEND ENQUIRY</h4>
                 </div>
 
-                <form action="../PHP/contactus.php" method="post">
+                <form action="../PHP/contactus.php" method="POST">
                     <label for="fname" class="text-element font-extralight">Full Name *</label>
                     <input type="text" id="fname" name="fname" required class="block w-full p-2 rounded border-gray-500 mb-2 border-2" placeholder="Enter your full name">
                     <label for="email" class="text-element font-extralight">Email Address *</label>
@@ -145,11 +145,12 @@
                     <label for="phone" class="text-element font-extralight">Phone Number:</label required>
                     <input type="tel" id="phone" name="phone" placeholder="123-45-678" class="block w-full p-2 rounded mb-2 border-gray-500 border-2" aria-placeholder="Let's hear you">
                     <label for="message" class="text-element font-extralight">Message *</label>
-                    <textarea rows="4" cols="50" name="comment" form="usrform" class="block w-full rounded border-gray-500 mb-3 border-2" placeholder="Let's hear you"></textarea>
+                    <textarea rows="4" cols="50" name="message" form="usrform" class="block w-full rounded border-gray-500 mb-3 border-2" placeholder="Let's hear you"></textarea>
                     <input type="checkbox" id="check" name="checkbox" value="tick" class="mr-1">
                     <label for="check" class="text-element font-bold">I consent to get news and service updates from DAPS Search</label>
-                    <input type="submit" value="Submit" class="mx-auto block border-2 bg-black w-40 h-10 text-white my-5 rounded-full hover:text-element">
-                    <span></span>
+                    <input type="submit" name="save_checkbox" value="Submit" class="mx-auto block border-2 bg-black w-40 h-10 text-white my-5 rounded-full hover:text-element">
+
+                    <div id="message" class="text-primary text-center font-extralight"></div>
                 </form>
             </div>
 
@@ -308,6 +309,7 @@
    <script src="../modules/country.js"></script>
    <script src="../modules/about.js"></script>
    <script src="../modules/menu.js"></script>
+   <script src="../modules/contact.js"></script>
 
 </body>
 </html>

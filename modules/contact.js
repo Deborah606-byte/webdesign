@@ -1,30 +1,22 @@
 //Contact Form in PHP
-const form = document.querySelector("form"),
-statusTxt = form.querySelector("form span");
-form.onsubmit = (e)=>{
-  e.preventDefault();
-  statusTxt.style.color = "#0D6EFD";
-  statusTxt.style.display = "block";
-  statusTxt.innerText = "Sending your message...";
-  form.classList.add("disabled");
-
-  let xhr = new XMLHttpRequest();
-  xhr.open("POST", "message.php", true);
-  xhr.onload = ()=>{
-    if(xhr.readyState == 4 && xhr.status == 200){
-      let response = xhr.response;
-      if(response.indexOf("required") != -1 || response.indexOf("valid") != -1 || response.indexOf("failed") != -1){
-        statusTxt.style.color = "red";
-      }else{
-        form.reset();
-        setTimeout(()=>{
-          statusTxt.style.display = "none";
-        }, 3000);
+document.querySelector('form').addEventListener('submit', function(e) {
+  e.preventDefault(); // prevent form from submitting
+  fetch('../PHP/contactus.php', {
+      method: 'POST',
+      body: new FormData(document.querySelector('form'))
+  })
+  .then(response => response.json())
+  .then(data => {
+      if (data.message) {
+          // display the message on the webpage
+          const messageDiv = document.querySelector('#message');
+          messageDiv.textContent = data.message;
+          messageDiv.scrollIntoView({behavior: "smooth"}); // scroll to the message
       }
-      statusTxt.innerText = response;
-      form.classList.remove("disabled");
-    }
-  }
-  let formData = new FormData(form);
-  xhr.send(formData);
-}
+  })
+  .catch(error => console.error(error));
+});
+
+
+
+
